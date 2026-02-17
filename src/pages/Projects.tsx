@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
 import { ArrowRight, Target, BarChart3, Sparkles, Users, Brain } from "lucide-react";
-import { SEO } from "../../components/SEO";
+import { SEO } from "../components/SEO";
 
 interface ProjectTheme {
   primary: string;

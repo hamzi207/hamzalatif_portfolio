@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Mail, Linkedin, Twitter, Send } from "lucide-react";
-import { SEO } from "../../components/SEO";
+import { SEO } from "../components/SEO";
 
 export function Contact() {
   return (

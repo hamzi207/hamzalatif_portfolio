@@ -38,7 +38,7 @@ const featuredProjects = [
   }
 ];
 
-import { SEO } from "../../components/SEO";
+import { SEO } from "../components/SEO";
 
 export function Home() {
   return (

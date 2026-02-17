@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
 import { ArrowLeft, CheckCircle2 } from "lucide-react";
-import { SEO } from "../../components/SEO";
+import { SEO } from "../components/SEO";
 
 export function AICompassCaseStudy() {
   const steps = [

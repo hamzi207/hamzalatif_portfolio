@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Briefcase, GraduationCap, Award, FileText, Download, Code2, Globe } from "lucide-react";
 import { useState } from "react";
 import { FilePreviewModal } from "../components/FilePreviewModal";
-import { SEO } from "../../components/SEO";
+import { SEO } from "../components/SEO";
 
 export function About() {
   const [previewFile, setPreviewFile] = useState<{ url: string, title: string } | null>(null);
