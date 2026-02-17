@@ -1,0 +1,85 @@
+import { motion, AnimatePresence } from "motion/react";
+import { X, ExternalLink } from "lucide-react";
+import { useEffect } from "react";
+
+interface FilePreviewModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+    fileUrl: string | null;
+    title?: string;
+}
+
+export function FilePreviewModal({ isOpen, onClose, fileUrl, title = "Document Preview" }: FilePreviewModalProps) {
+    // Prevent body scroll when modal is open
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "unset";
+        }
+        return () => {
+            document.body.style.overflow = "unset";
+        };
+    }, [isOpen]);
+
+    if (!isOpen || !fileUrl) return null;
+
+    return (
+        <AnimatePresence>
+            {isOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6">
+                    {/* Backdrop */}
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        onClick={onClose}
+                        className="absolute inset-0 bg-background/80 backdrop-blur-sm"
+                    />
+
+                    {/* Modal Container */}
+                    <motion.div
+                        initial={{ opacity: 0, scale: 0.95, y: 20 }}
+                        animate={{ opacity: 1, scale: 1, y: 0 }}
+                        exit={{ opacity: 0, scale: 0.95, y: 20 }}
+                        className="relative w-full max-w-5xl h-[85vh] bg-card border border-border rounded-xl shadow-2xl flex flex-col overflow-hidden"
+                    >
+                        {/* Header */}
+                        <div className="flex items-center justify-between px-6 py-4 border-b border-border bg-card/50 backdrop-blur">
+                            <h3 className="text-lg font-medium text-foreground truncate max-w-[80%]">
+                                {title}
+                            </h3>
+                            <div className="flex items-center gap-2">
+                                <a
+                                    href={fileUrl}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="p-2 text-muted-foreground hover:text-foreground rounded-full hover:bg-secondary/50 transition-colors"
+                                    title="Open in new tab"
+                                >
+                                    <ExternalLink className="w-5 h-5" />
+                                </a>
+                                <button
+                                    onClick={onClose}
+                                    className="p-2 text-muted-foreground hover:text-foreground rounded-full hover:bg-secondary/50 transition-colors"
+                                    aria-label="Close preview"
+                                >
+                                    <X className="w-5 h-5" />
+                                </button>
+                            </div>
+                        </div>
+
+                        {/* Content (Iframe for PDF) */}
+                        <div className="flex-1 bg-white/5 w-full h-full relative">
+                            <iframe
+                                src={fileUrl}
+                                className="w-full h-full border-0"
+                                title={title}
+                            />
+                        </div>
+                    </motion.div>
+                </div>
+            )}
+        </AnimatePresence>
+    );
+}
