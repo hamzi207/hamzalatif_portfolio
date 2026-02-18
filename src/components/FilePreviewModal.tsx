@@ -31,6 +31,7 @@ export function FilePreviewModal({
 
     const isResume = fileUrl.toLowerCase().includes('resume');
     const displayUrl = isResume ? fileUrl : `${fileUrl}#toolbar=0`;
+    const isFirefox = typeof window !== 'undefined' && navigator.userAgent.toLowerCase().includes('firefox');
 
     return (
         <AnimatePresence>
@@ -81,32 +82,40 @@ export function FilePreviewModal({
 
                         {/* Content (PDF Viewer) */}
                         <div className="flex-1 bg-white w-full h-full relative overflow-hidden">
-                            <object
-                                data={displayUrl}
-                                type="application/pdf"
-                                className="w-full h-full"
-                            >
-                                <iframe
+                            {isFirefox ? (
+                                <embed
                                     src={displayUrl}
-                                    className="w-full h-full border-0"
-                                    title={title}
+                                    type="application/pdf"
+                                    className="w-full h-full"
+                                />
+                            ) : (
+                                <object
+                                    data={displayUrl}
+                                    type="application/pdf"
+                                    className="w-full h-full"
                                 >
-                                    <div className="flex flex-col items-center justify-center h-full p-6 text-center space-y-4">
-                                        <p className="text-muted-foreground">This browser doesn't support PDF previews.</p>
-                                        {isResume ? (
-                                            <a
-                                                href={fileUrl}
-                                                download
-                                                className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
-                                            >
-                                                Download to View
-                                            </a>
-                                        ) : (
-                                            <p className="text-sm text-muted-foreground italic">Previews are restricted on this device.</p>
-                                        )}
-                                    </div>
-                                </iframe>
-                            </object>
+                                    <iframe
+                                        src={displayUrl}
+                                        className="w-full h-full border-0"
+                                        title={title}
+                                    >
+                                        <div className="flex flex-col items-center justify-center h-full p-6 text-center space-y-4">
+                                            <p className="text-muted-foreground">This browser doesn't support PDF previews.</p>
+                                            {isResume ? (
+                                                <a
+                                                    href={fileUrl}
+                                                    download
+                                                    className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+                                                >
+                                                    Download to View
+                                                </a>
+                                            ) : (
+                                                <p className="text-sm text-muted-foreground italic">Previews are restricted on this device.</p>
+                                            )}
+                                        </div>
+                                    </iframe>
+                                </object>
+                            )}
                         </div>
                     </motion.div>
                 </div>
