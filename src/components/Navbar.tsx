@@ -10,7 +10,7 @@ export function Navbar() {
   const navItems = [
     { name: "Projects", path: "/projects" },
     { name: "About", path: "/about" },
-    { name: "Blog", path: "/blog" },
+    // { name: "Blog", path: "/blog" },
     { name: "Contact", path: "/contact" },
   ];
 

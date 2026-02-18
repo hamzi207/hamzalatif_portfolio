@@ -22,9 +22,9 @@ export function Footer() {
               <Link to="/about" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
                 About
               </Link>
-              <Link to="/blog" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
+              {/* <Link to="/blog" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
                 Blog
-              </Link>
+              </Link> */}
               <Link to="/contact" className="text-muted-foreground hover:text-foreground transition-colors duration-200">
                 Contact
               </Link>
