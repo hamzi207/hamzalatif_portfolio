@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Mail, Linkedin, Send } from "lucide-react";
+import { Mail, Linkedin /*, Send */ } from "lucide-react";
 import { SEO } from "../components/SEO";
 
 export function Contact() {
@@ -73,8 +73,8 @@ export function Contact() {
             </a>
           </div>
 
-          {/* Contact Form */}
-          <div className="max-w-2xl mx-auto">
+          {/* Contact Form - Disabled temporarily */}
+          {/* <div className="max-w-2xl mx-auto">
             <div className="p-8 bg-card border border-border rounded-lg space-y-6">
               <div className="space-y-2">
                 <h3 className="text-foreground">Send a Message</h3>
@@ -129,7 +129,7 @@ export function Contact() {
                 </button>
               </form>
             </div>
-          </div>
+          </div> */}
 
           {/* Additional Info */}
           <div className="text-center space-y-4 pt-8">
