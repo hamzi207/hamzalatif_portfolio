@@ -56,7 +56,7 @@ export function Contact() {
                 </svg>
               </div>
               <h4 className="text-foreground">Xing</h4>
-              <p className="text-sm text-muted-foreground">MuhammadHamza_Latif</p>
+              <p className="text-sm text-muted-foreground">/MuhammadHamza_Latif</p>
             </a>
 
             <a
@@ -69,7 +69,7 @@ export function Contact() {
                 <Linkedin className="w-6 h-6 text-primary" />
               </div>
               <h4 className="text-foreground">LinkedIn</h4>
-              <p className="text-sm text-muted-foreground">in/mhlatif207</p>
+              <p className="text-sm text-muted-foreground">/in/mhlatif207/</p>
             </a>
           </div>
 

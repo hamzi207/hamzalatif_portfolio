@@ -5,10 +5,10 @@ import { FilePreviewModal } from "../components/FilePreviewModal";
 import { SEO } from "../components/SEO";
 
 export function About() {
-  const [previewFile, setPreviewFile] = useState<{ url: string, title: string } | null>(null);
+  const [previewFile, setPreviewFile] = useState<{ url: string, title: string, allowDownload?: boolean } | null>(null);
 
-  const openPreview = (url: string, title: string) => {
-    setPreviewFile({ url, title });
+  const openPreview = (url: string, title: string, allowDownload: boolean = false) => {
+    setPreviewFile({ url, title, allowDownload });
   };
 
   const closePreview = () => {
@@ -23,6 +23,7 @@ export function About() {
         onClose={closePreview}
         fileUrl={previewFile?.url || null}
         title={previewFile?.title}
+        allowDownload={previewFile?.allowDownload}
       />
       <div className="pt-32 pb-20 px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -59,7 +60,7 @@ export function About() {
                 </span>
                 <a href="https://www.linkedin.com/in/mhlatif207/" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary transition-colors">
                   <Linkedin className="w-4 h-4 mr-2" />
-                  LinkedIn
+                  /in/mhlatif207/
                 </a>
                 <a href="https://www.xing.com/profile/MuhammadHamza_Latif" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary transition-colors">
                   <svg
@@ -71,10 +72,10 @@ export function About() {
                     strokeLinejoin="round"
                     className="w-4 h-4 mr-2"
                   >
-                    <path d="M16.35 15.5l-3.35-5.9 3.25-5.6h3.65l-4.5 7.8 4.6 8.2h-3.65z" />
+                    <path d="M16.35 15.5-3.35-5.9 3.25-5.6h3.65l-4.5 7.8 4.6 8.2h-3.65z" />
                     <path d="M7.75 19.5l4-7-2.3-4h-3.3l3.2 5.6-5.1 8.9h3.5z" />
                   </svg>
-                  Xing
+                  /MuhammadHamza_Latif
                 </a>
                 <a href="https://x.com/hklatif207" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary transition-colors">
                   <svg
@@ -89,13 +90,13 @@ export function About() {
                     <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
                     <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
                   </svg>
-                  X
+                  /hklatif207
                 </a>
               </div>
 
               <div className="flex flex-wrap gap-4 pt-4">
                 <button
-                  onClick={() => openPreview("/assets/Muhammad_Hamza_Latif_Resume.pdf", "Muhammad Hamza Latif - Resume")}
+                  onClick={() => openPreview("/assets/Muhammad_Hamza_Latif_Resume.pdf", "Muhammad Hamza Latif - Resume", true)}
                   className="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-200 cursor-pointer"
                 >
                   <FileText className="w-4 h-4 mr-2" />

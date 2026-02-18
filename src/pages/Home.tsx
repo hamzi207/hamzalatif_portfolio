@@ -81,7 +81,7 @@ export function Home() {
                   to="/projects"
                   className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-card text-foreground rounded-lg border border-border hover:border-primary/50 transition-colors duration-200 font-medium"
                 >
-                  View Selected Work
+                  My Projects
                 </Link>
               </div>
             </motion.div>

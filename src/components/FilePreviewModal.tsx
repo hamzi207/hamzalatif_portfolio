@@ -7,9 +7,16 @@ interface FilePreviewModalProps {
     onClose: () => void;
     fileUrl: string | null;
     title?: string;
+    allowDownload?: boolean;
 }
 
-export function FilePreviewModal({ isOpen, onClose, fileUrl, title = "Document Preview" }: FilePreviewModalProps) {
+export function FilePreviewModal({
+    isOpen,
+    onClose,
+    fileUrl,
+    title = "Document Preview",
+    allowDownload = true
+}: FilePreviewModalProps) {
     // Prevent body scroll when modal is open
     useEffect(() => {
         if (isOpen) {
@@ -23,6 +30,11 @@ export function FilePreviewModal({ isOpen, onClose, fileUrl, title = "Document P
     }, [isOpen]);
 
     if (!isOpen || !fileUrl) return null;
+
+    // Append toolbar=0 to PDF URLs to hide the viewer toolbar if it's a PDF
+    const displayUrl = fileUrl.toLowerCase().endsWith('.pdf')
+        ? `${fileUrl}#toolbar=0`
+        : fileUrl;
 
     return (
         <AnimatePresence>
@@ -50,15 +62,17 @@ export function FilePreviewModal({ isOpen, onClose, fileUrl, title = "Document P
                                 {title}
                             </h3>
                             <div className="flex items-center gap-2">
-                                <a
-                                    href={fileUrl}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                    className="p-2 text-muted-foreground hover:text-foreground rounded-full hover:bg-secondary/50 transition-colors"
-                                    title="Open in new tab"
-                                >
-                                    <ExternalLink className="w-5 h-5" />
-                                </a>
+                                {allowDownload && (
+                                    <a
+                                        href={fileUrl}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="p-2 text-muted-foreground hover:text-foreground rounded-full hover:bg-secondary/50 transition-colors"
+                                        title="Open in new tab"
+                                    >
+                                        <ExternalLink className="w-5 h-5" />
+                                    </a>
+                                )}
                                 <button
                                     onClick={onClose}
                                     className="p-2 text-muted-foreground hover:text-foreground rounded-full hover:bg-secondary/50 transition-colors"
@@ -72,24 +86,28 @@ export function FilePreviewModal({ isOpen, onClose, fileUrl, title = "Document P
                         {/* Content (PDF Viewer) */}
                         <div className="flex-1 bg-white w-full h-full relative overflow-hidden">
                             <object
-                                data={fileUrl}
+                                data={displayUrl}
                                 type="application/pdf"
                                 className="w-full h-full"
                             >
                                 <iframe
-                                    src={fileUrl}
+                                    src={displayUrl}
                                     className="w-full h-full border-0"
                                     title={title}
                                 >
                                     <div className="flex flex-col items-center justify-center h-full p-6 text-center space-y-4">
                                         <p className="text-muted-foreground">This browser doesn't support PDF previews.</p>
-                                        <a
-                                            href={fileUrl}
-                                            download
-                                            className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
-                                        >
-                                            Download to View
-                                        </a>
+                                        {allowDownload ? (
+                                            <a
+                                                href={fileUrl}
+                                                download
+                                                className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+                                            >
+                                                Download to View
+                                            </a>
+                                        ) : (
+                                            <p className="text-sm text-muted-foreground italic">Previews are restricted on this device.</p>
+                                        )}
                                     </div>
                                 </iframe>
                             </object>
