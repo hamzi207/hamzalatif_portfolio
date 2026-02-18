@@ -32,9 +32,7 @@ export function FilePreviewModal({
     if (!isOpen || !fileUrl) return null;
 
     // Append toolbar=0 to PDF URLs to hide the viewer toolbar if it's a PDF
-    const displayUrl = fileUrl.toLowerCase().endsWith('.pdf')
-        ? `${fileUrl}#toolbar=0`
-        : fileUrl;
+    const displayUrl = fileUrl;
 
     return (
         <AnimatePresence>
