@@ -69,13 +69,30 @@ export function FilePreviewModal({ isOpen, onClose, fileUrl, title = "Document P
                             </div>
                         </div>
 
-                        {/* Content (Iframe for PDF) */}
-                        <div className="flex-1 bg-white/5 w-full h-full relative">
-                            <iframe
-                                src={fileUrl}
-                                className="w-full h-full border-0"
-                                title={title}
-                            />
+                        {/* Content (PDF Viewer) */}
+                        <div className="flex-1 bg-white w-full h-full relative overflow-hidden">
+                            <object
+                                data={fileUrl}
+                                type="application/pdf"
+                                className="w-full h-full"
+                            >
+                                <iframe
+                                    src={fileUrl}
+                                    className="w-full h-full border-0"
+                                    title={title}
+                                >
+                                    <div className="flex flex-col items-center justify-center h-full p-6 text-center space-y-4">
+                                        <p className="text-muted-foreground">This browser doesn't support PDF previews.</p>
+                                        <a
+                                            href={fileUrl}
+                                            download
+                                            className="px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
+                                        >
+                                            Download to View
+                                        </a>
+                                    </div>
+                                </iframe>
+                            </object>
                         </div>
                     </motion.div>
                 </div>

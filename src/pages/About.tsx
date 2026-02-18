@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Briefcase, GraduationCap, Award, FileText, Download, Code2, Globe, Mail, Linkedin, Twitter, MapPin } from "lucide-react";
+import { Briefcase, GraduationCap, Award, FileText, Download, Code2, Globe, Mail, Linkedin, MapPin } from "lucide-react";
 import { useState } from "react";
 import { FilePreviewModal } from "../components/FilePreviewModal";
 import { SEO } from "../components/SEO";
@@ -61,9 +61,35 @@ export function About() {
                   <Linkedin className="w-4 h-4 mr-2" />
                   LinkedIn
                 </a>
+                <a href="https://www.xing.com/profile/MuhammadHamza_Latif" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary transition-colors">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-4 h-4 mr-2"
+                  >
+                    <path d="M16.35 15.5l-3.35-5.9 3.25-5.6h3.65l-4.5 7.8 4.6 8.2h-3.65z" />
+                    <path d="M7.75 19.5l4-7-2.3-4h-3.3l3.2 5.6-5.1 8.9h3.5z" />
+                  </svg>
+                  Xing
+                </a>
                 <a href="https://x.com/hklatif207" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary transition-colors">
-                  <Twitter className="w-4 h-4 mr-2" />
-                  @hklatif207
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-4 h-4 mr-2"
+                  >
+                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                  </svg>
+                  X
                 </a>
               </div>
 
@@ -95,9 +121,10 @@ export function About() {
                 part of product management wasn't building the feature—it was deciding what to build.
               </p>
               <p>
-                I created hamzalatif.com and ProductLogik to solve the 'Black Box' problem of prioritization.
-                My work focuses on stripping away the ambiguity of product roadmaps using Explainable AI.
-                I don't just advocate for AI; I build systems that govern it.
+                I created ProductLogik to solve the 'Black Box' problem of prioritization. My work focuses on stripping away the ambiguity of product roadmaps using Explainable AI. I don't just advocate for AI; I build systems that govern it.
+              </p>
+              <p>
+                This website, hamzalatif.com, serves as my personal portfolio—a space to share my journey, professional philosophy, and selected works with the product community.
               </p>
               <p>
                 Currently, I am scaling ProductLogik to help product teams move from 'feature factories' to 'decision engines'.
