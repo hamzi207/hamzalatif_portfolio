@@ -317,6 +317,9 @@ export function About() {
                       <button onClick={() => openPreview("/assets/Google_AI_Essentials.pdf", "Google AI Essentials")} className="flex items-center text-primary hover:underline cursor-pointer">
                         <FileText className="w-3 h-3 mr-1" /> Preview
                       </button>
+                      <a href="https://coursera.org/verify/82SMAVMRS7KF" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                        <Award className="w-3 h-3 mr-1" /> Verify
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -335,7 +338,7 @@ export function About() {
                       <button onClick={() => openPreview("/assets/ScrumOrg_Professional_Scrum_Product_Owner_I.pdf", "PSPO I Certification")} className="flex items-center text-primary hover:underline cursor-pointer">
                         <FileText className="w-3 h-3 mr-1" /> Preview
                       </button>
-                      <a href="https://www.credly.com/users/mhlatif207" target="_blank" className="flex items-center text-muted-foreground hover:text-primary">
+                      <a href="https://www.scrum.org/certificates/1225105" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                         <Award className="w-3 h-3 mr-1" /> Verify
                       </a>
                     </div>
@@ -356,7 +359,7 @@ export function About() {
                       <button onClick={() => openPreview("/assets/ScrumOrg_Professional_Scrum_Master_I.pdf", "PSM I Certification")} className="flex items-center text-primary hover:underline cursor-pointer">
                         <FileText className="w-3 h-3 mr-1" /> Preview
                       </button>
-                      <a href="https://www.credly.com/users/mhlatif207" target="_blank" className="flex items-center text-muted-foreground hover:text-primary">
+                      <a href="https://www.scrum.org/certificates/1224816" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                         <Award className="w-3 h-3 mr-1" /> Verify
                       </a>
                     </div>
@@ -365,8 +368,8 @@ export function About() {
 
                 {/* CSPO */}
                 <div className="group p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-all duration-200 flex sm:items-start gap-4">
-                  <div className="w-16 h-16 shrink-0 bg-card rounded-md flex items-center justify-center border border-border">
-                    <Award className="w-8 h-8 text-muted-foreground/50" />
+                  <div className="w-16 h-16 shrink-0 bg-white rounded-md p-1 border border-border overflow-hidden">
+                    <img src="/assets/cspo_badge.png" alt="CSPO" className="w-full h-full object-contain" />
                   </div>
                   <div className="space-y-2 flex-1">
                     <div>
@@ -377,14 +380,17 @@ export function About() {
                       <button onClick={() => openPreview("/assets/ScrumAlliance_CSPO_Certificate.pdf", "CSPO Certification")} className="flex items-center text-primary hover:underline cursor-pointer">
                         <FileText className="w-3 h-3 mr-1" /> Preview
                       </button>
+                      <a href="https://www.scrumalliance.org/members/1761025" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                        <Award className="w-3 h-3 mr-1" /> Verify
+                      </a>
                     </div>
                   </div>
                 </div>
 
                 {/* AI Product Management */}
                 <div className="group p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-all duration-200 flex sm:items-start gap-4">
-                  <div className="w-16 h-16 shrink-0 bg-card rounded-md flex items-center justify-center border border-border">
-                    <Award className="w-8 h-8 text-muted-foreground/50" />
+                  <div className="w-16 h-16 shrink-0 bg-white rounded-md p-1 border border-border overflow-hidden">
+                    <img src="/assets/aipm_badge.png" alt="AI Product Management" className="w-full h-full object-contain" />
                   </div>
                   <div className="space-y-2 flex-1">
                     <div>
@@ -395,6 +401,9 @@ export function About() {
                       <button onClick={() => openPreview("/assets/aipm_credential_2026_neuefische.pdf", "AI Product Management")} className="flex items-center text-primary hover:underline cursor-pointer">
                         <FileText className="w-3 h-3 mr-1" /> Preview
                       </button>
+                      <a href="https://eu.credential.net/68f784ce-a693-4c0b-8990-1d469610c688#acc.cgZJHsPX" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                        <Award className="w-3 h-3 mr-1" /> Verify
+                      </a>
                     </div>
                   </div>
                 </div>
@@ -403,8 +412,8 @@ export function About() {
 
                 {/* Business Analysis */}
                 <div className="group p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-all duration-200 flex sm:items-start gap-4">
-                  <div className="w-16 h-16 shrink-0 bg-card rounded-md flex items-center justify-center border border-border">
-                    <Award className="w-8 h-8 text-muted-foreground/50" />
+                  <div className="w-16 h-16 shrink-0 bg-white rounded-md p-1 border border-border overflow-hidden">
+                    <img src="/assets/Business_Analysis_and_Process_Management_badge.png" alt="Business Analysis" className="w-full h-full object-contain" />
                   </div>
                   <div className="space-y-2 flex-1">
                     <div>
@@ -415,6 +424,9 @@ export function About() {
                       <button onClick={() => openPreview("/assets/Business_Analysis_&_Process_Management.pdf", "Business Analysis Certification")} className="flex items-center text-primary hover:underline cursor-pointer">
                         <FileText className="w-3 h-3 mr-1" /> Preview
                       </button>
+                      <a href="https://coursera.org/verify/1CRA8FY2MMKK" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                        <Award className="w-3 h-3 mr-1" /> Verify
+                      </a>
                     </div>
                   </div>
                 </div>
