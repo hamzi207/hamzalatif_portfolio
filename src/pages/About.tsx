@@ -387,18 +387,18 @@ export function About() {
                   </div>
                 </div>
 
-                {/* AI Product Management */}
+                {/* AI Project Manager */}
                 <div className="group p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-all duration-200 flex sm:items-start gap-4">
                   <div className="w-16 h-16 shrink-0 bg-white rounded-md p-1 border border-border overflow-hidden">
-                    <img src="/assets/aipm_badge.png" alt="AI Product Management" className="w-full h-full object-contain" />
+                    <img src="/assets/aipm_badge.png" alt="AI Project Manager" className="w-full h-full object-contain" />
                   </div>
                   <div className="space-y-2 flex-1">
                     <div>
-                      <h4 className="font-medium text-foreground group-hover:text-primary transition-colors">AI Product Management</h4>
+                      <h4 className="font-medium text-foreground group-hover:text-primary transition-colors">AI Project Manager</h4>
                       <p className="text-sm text-muted-foreground">Neuefische</p>
                     </div>
                     <div className="flex gap-3 text-sm">
-                      <button onClick={() => openPreview("/assets/aipm_credential_2026_neuefische.pdf", "AI Product Management")} className="flex items-center text-primary hover:underline cursor-pointer">
+                      <button onClick={() => openPreview("/assets/aipm_credential_2026_neuefische.pdf", "AI Project Manager")} className="flex items-center text-primary hover:underline cursor-pointer">
                         <FileText className="w-3 h-3 mr-1" /> Preview
                       </button>
                       <a href="https://eu.credential.net/68f784ce-a693-4c0b-8990-1d469610c688#acc.cgZJHsPX" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
