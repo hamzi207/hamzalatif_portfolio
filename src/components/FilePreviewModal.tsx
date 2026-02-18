@@ -7,15 +7,13 @@ interface FilePreviewModalProps {
     onClose: () => void;
     fileUrl: string | null;
     title?: string;
-    allowDownload?: boolean;
 }
 
 export function FilePreviewModal({
     isOpen,
     onClose,
     fileUrl,
-    title = "Document Preview",
-    allowDownload = true
+    title = "Document Preview"
 }: FilePreviewModalProps) {
     // Prevent body scroll when modal is open
     useEffect(() => {
@@ -31,8 +29,7 @@ export function FilePreviewModal({
 
     if (!isOpen || !fileUrl) return null;
 
-    // Append toolbar=0 to PDF URLs to hide the viewer toolbar if it's a PDF
-    const displayUrl = fileUrl;
+    const isResume = fileUrl.toLowerCase().includes('resume');
 
     return (
         <AnimatePresence>
@@ -60,7 +57,7 @@ export function FilePreviewModal({
                                 {title}
                             </h3>
                             <div className="flex items-center gap-2">
-                                {allowDownload && (
+                                {isResume && (
                                     <a
                                         href={fileUrl}
                                         target="_blank"
@@ -84,18 +81,18 @@ export function FilePreviewModal({
                         {/* Content (PDF Viewer) */}
                         <div className="flex-1 bg-white w-full h-full relative overflow-hidden">
                             <object
-                                data={displayUrl}
+                                data={fileUrl}
                                 type="application/pdf"
                                 className="w-full h-full"
                             >
                                 <iframe
-                                    src={displayUrl}
+                                    src={fileUrl}
                                     className="w-full h-full border-0"
                                     title={title}
                                 >
                                     <div className="flex flex-col items-center justify-center h-full p-6 text-center space-y-4">
                                         <p className="text-muted-foreground">This browser doesn't support PDF previews.</p>
-                                        {allowDownload ? (
+                                        {isResume ? (
                                             <a
                                                 href={fileUrl}
                                                 download

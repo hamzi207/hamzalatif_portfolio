@@ -5,10 +5,10 @@ import { FilePreviewModal } from "../components/FilePreviewModal";
 import { SEO } from "../components/SEO";
 
 export function About() {
-  const [previewFile, setPreviewFile] = useState<{ url: string, title: string, allowDownload?: boolean } | null>(null);
+  const [previewFile, setPreviewFile] = useState<{ url: string, title: string } | null>(null);
 
-  const openPreview = (url: string, title: string, allowDownload: boolean = false) => {
-    setPreviewFile({ url, title, allowDownload });
+  const openPreview = (url: string, title: string) => {
+    setPreviewFile({ url, title });
   };
 
   const closePreview = () => {
@@ -23,7 +23,6 @@ export function About() {
         onClose={closePreview}
         fileUrl={previewFile?.url || null}
         title={previewFile?.title}
-        allowDownload={previewFile?.allowDownload}
       />
       <div className="pt-32 pb-20 px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
@@ -91,7 +90,7 @@ export function About() {
 
               <div className="flex flex-wrap gap-4 pt-4">
                 <button
-                  onClick={() => openPreview("/assets/Muhammad_Hamza_Latif_Resume.pdf", "Muhammad Hamza Latif - Resume", true)}
+                  onClick={() => openPreview("/assets/Muhammad_Hamza_Latif_Resume.pdf", "Muhammad Hamza Latif - Resume")}
                   className="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-200 cursor-pointer"
                 >
                   <FileText className="w-4 h-4 mr-2" />
