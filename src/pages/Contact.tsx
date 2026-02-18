@@ -47,7 +47,7 @@ export function Contact() {
                   fill="currentColor"
                   className="w-6 h-6 text-primary"
                 >
-                  <path d="M16.33 5.05L12.87 11.2 16.5 17.5h4.48L17.2 11.2l3.6-6.15h-4.47zM7.9 11.08l-2.7-4.75H2.6l2.7 4.75-4.13 7.3h2.6l4.13-7.3z" />
+                  <path d="M16.33 5.05L12.87 11.2 16.5 17.5h4.48L17.2 11.2l3.6-6.15h-4.47zM9.9 11.08l-2.7-4.75H4.6l2.7 4.75-4.13 7.3h2.6l4.13-7.3z" />
                 </svg>
               </div>
               <h4 className="text-foreground">Xing</h4>
