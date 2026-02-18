@@ -1,5 +1,5 @@
 import { Link } from "react-router";
-import { Linkedin, Twitter, Github, Mail } from "lucide-react";
+import { Linkedin, Github, Mail } from "lucide-react";
 
 export function Footer() {
   return (
@@ -7,7 +7,7 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h4 className="text-foreground">Hamza Latif</h4>
+            <h4 className="text-lg font-bold tracking-tight text-foreground">Hamza Latif</h4>
             <p className="text-sm text-muted-foreground">
               AI Product Manager building intelligent products that solve real problems.
             </p>
@@ -46,9 +46,20 @@ export function Footer() {
                 href="https://x.com/hklatif207"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-card border border-border rounded-lg flex items-center justify-center hover:border-primary/50 transition-colors duration-200"
+                className="w-10 h-10 bg-card border border-border rounded-lg flex items-center justify-center hover:border-primary/50 transition-colors duration-200 group"
               >
-                <Twitter className="w-5 h-5 text-muted-foreground" />
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-200"
+                >
+                  <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                  <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                </svg>
               </a>
               <a
                 href="https://github.com/hamzi207"

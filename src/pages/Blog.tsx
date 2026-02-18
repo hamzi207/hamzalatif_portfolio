@@ -89,26 +89,7 @@ export function Blog() {
             ))}
           </div>
 
-          {/* Newsletter CTA */}
-          <div className="pt-8 text-center">
-            <div className="p-8 bg-card border border-border rounded-lg space-y-4 max-w-2xl mx-auto">
-              <h3 className="text-foreground">Stay Updated</h3>
-              <p className="text-muted-foreground">
-                Get notified when I publish new articles about AI product management and
-                building great products.
-              </p>
-              <div className="flex gap-3 max-w-md mx-auto pt-2">
-                <input
-                  type="email"
-                  placeholder="Enter your email"
-                  className="flex-1 px-4 py-2 bg-background border border-border rounded-lg text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary"
-                />
-                <button className="px-6 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-200">
-                  Subscribe
-                </button>
-              </div>
-            </div>
-          </div>
+
         </motion.div>
       </div>
     </div>

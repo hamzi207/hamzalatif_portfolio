@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
-import { ArrowRight, Target, BarChart3, Sparkles, Users, Brain } from "lucide-react";
+import { ArrowRight, Target, Brain, Sparkles, Users, ShoppingBag } from "lucide-react";
 import { SEO } from "../components/SEO";
 
 interface ProjectTheme {
@@ -69,19 +69,10 @@ const projects: (Project & { theme?: ProjectTheme })[] = [
     }
   },
   {
-    id: "datalogik-churn",
-    title: "DataLogik Churn Predictor",
-    description: "End-to-end analytics platform that predicts customer churn and lifetime value with 92% accuracy.",
-    tags: ["Data Science", "B2B", "Scale"],
-    icon: BarChart3,
-    featured: false,
-    link: null,
-  },
-  {
     id: "klarstein-personalization",
     title: "Klarstein Personalization & Search",
-    description: "Personalization system that increased user engagement by 45% through ML-powered content recommendations.",
-    tags: ["Personalization", "ML", "Growth"],
+    description: "Managed strategic migrations for Search (FactFinder to Bloomreach) and Personalization, optimizing the digital experience for a large-scale e-commerce platform.",
+    tags: ["Personalization", "Search", "E-commerce"],
     icon: Sparkles,
     featured: false,
     link: null,
@@ -89,12 +80,21 @@ const projects: (Project & { theme?: ProjectTheme })[] = [
   {
     id: "zennova-erp",
     title: "Zennova ERP & HRM System",
-    description: "Collaboration tool with AI-powered insights that helps distributed teams work more effectively.",
-    tags: ["Collaboration", "AI", "Remote Work"],
+    description: "Guided the development of custom ERP and HRM solutions to streamline enterprise operations and enable effective remote work.",
+    tags: ["ERP", "Digital Transformation", "Product Ownership"],
     icon: Users,
     featured: false,
     link: null,
   },
+  {
+    id: "bloomr-ecommerce",
+    title: "BLOOMR E-commerce Platform",
+    description: "Led the end-to-end redesign and infrastructure migration of a high-traffic retail e-commerce platform and accounting systems.",
+    tags: ["E-commerce", "Cloud Migration", "Infrastructure"],
+    icon: ShoppingBag,
+    featured: false,
+    link: null,
+  }
 ];
 
 export function Projects() {

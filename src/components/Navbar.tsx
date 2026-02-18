@@ -31,7 +31,7 @@ export function Navbar() {
                 className="w-full h-full object-cover"
               />
             </div>
-            <span className="text-xl font-semibold text-foreground">
+            <span className="text-xl font-bold tracking-tight text-foreground">
               Hamza Latif
             </span>
           </Link>

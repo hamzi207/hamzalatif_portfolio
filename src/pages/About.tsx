@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Briefcase, GraduationCap, Award, FileText, Download, Code2, Globe } from "lucide-react";
+import { Briefcase, GraduationCap, Award, FileText, Download, Code2, Globe, Mail, Linkedin, Twitter, MapPin } from "lucide-react";
 import { useState } from "react";
 import { FilePreviewModal } from "../components/FilePreviewModal";
 import { SEO } from "../components/SEO";
@@ -47,6 +47,26 @@ export function About() {
                 />
               </div>
 
+              {/* Contact Details */}
+              <div className="flex flex-wrap gap-6 text-muted-foreground">
+                <a href="mailto:contact@hamzalatif.com" className="flex items-center hover:text-primary transition-colors">
+                  <Mail className="w-4 h-4 mr-2" />
+                  contact@hamzalatif.com
+                </a>
+                <span className="flex items-center">
+                  <MapPin className="w-4 h-4 mr-2" />
+                  Berlin, Germany
+                </span>
+                <a href="https://www.linkedin.com/in/mhlatif207/" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary transition-colors">
+                  <Linkedin className="w-4 h-4 mr-2" />
+                  LinkedIn
+                </a>
+                <a href="https://x.com/hklatif207" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary transition-colors">
+                  <Twitter className="w-4 h-4 mr-2" />
+                  @hklatif207
+                </a>
+              </div>
+
               <div className="flex flex-wrap gap-4 pt-4">
                 <button
                   onClick={() => openPreview("/assets/Muhammad_Hamza_Latif_Resume.pdf", "Muhammad Hamza Latif - Resume")}
@@ -64,6 +84,8 @@ export function About() {
                   Download CV
                 </a>
               </div>
+
+
             </div>
 
             {/* Bio */}
@@ -208,6 +230,19 @@ export function About() {
                   </div>
                   <p className="text-primary font-medium">Loops & Logic</p>
                   <p className="text-muted-foreground">Lahore, Pakistan</p>
+                </div>
+
+                <div className="space-y-2">
+                  <div className="flex items-baseline justify-between">
+                    <h4 className="text-foreground">IT Support</h4>
+                    <span className="text-sm text-muted-foreground">06/2012 - 01/2016</span>
+                  </div>
+                  <p className="text-primary font-medium">Revenue Department Divisional Office</p>
+                  <p className="text-muted-foreground">Sargodha, Pakistan</p>
+                  <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
+                    <li>Supported IT systems across government departments.</li>
+                    <li>Maintained system stability and reporting infrastructure.</li>
+                  </ul>
                 </div>
 
               </div>
@@ -373,8 +408,8 @@ export function About() {
               </p>
             </div>
           </motion.div>
-        </div>
-      </div>
+        </div >
+      </div >
     </>
   );
 }

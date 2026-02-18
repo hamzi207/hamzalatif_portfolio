@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Mail, Linkedin, Twitter, Send } from "lucide-react";
+import { Mail, Linkedin, Send } from "lucide-react";
 import { SEO } from "../components/SEO";
 
 export function Contact() {
@@ -25,23 +25,39 @@ export function Contact() {
           {/* Contact Methods */}
           <div className="grid md:grid-cols-3 gap-6">
             <a
-              href="mailto:hamzi207@gmail.com"
+              href="mailto:contact@hamzalatif.com"
               className="group p-6 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors duration-200 text-center space-y-3"
             >
               <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto group-hover:bg-primary/20 transition-colors duration-200">
                 <Mail className="w-6 h-6 text-primary" />
               </div>
               <h4 className="text-foreground">Email</h4>
-              <p className="text-sm text-muted-foreground">hamzi207@gmail.com</p>
+              <p className="text-sm text-muted-foreground">contact@hamzalatif.com</p>
             </a>
 
-            <div className="p-6 bg-card border border-border rounded-lg text-center space-y-3">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto">
-                <div className="text-primary font-bold">+</div>
+            <a
+              href="https://www.xing.com/profile/MuhammadHamza_Latif"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group p-6 bg-card border border-border rounded-lg hover:border-primary/50 transition-colors duration-200 text-center space-y-3"
+            >
+              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto group-hover:bg-primary/20 transition-colors duration-200">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-6 h-6 text-primary"
+                >
+                  <path d="M16.35 15.5l-3.35-5.9 3.25-5.6h3.65l-4.5 7.8 4.6 8.2h-3.65z" />
+                  <path d="M7.75 19.5l4-7-2.3-4h-3.3l3.2 5.6-5.1 8.9h3.5z" />
+                </svg>
               </div>
-              <h4 className="text-foreground">Phone</h4>
-              <p className="text-sm text-muted-foreground">+49 163 110 8764</p>
-            </div>
+              <h4 className="text-foreground">Xing</h4>
+              <p className="text-sm text-muted-foreground">MuhammadHamza_Latif</p>
+            </a>
 
             <a
               href="https://www.linkedin.com/in/mhlatif207/"
