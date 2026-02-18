@@ -30,6 +30,7 @@ export function FilePreviewModal({
     if (!isOpen || !fileUrl) return null;
 
     const isResume = fileUrl.toLowerCase().includes('resume');
+    const displayUrl = isResume ? fileUrl : `${fileUrl}#toolbar=0`;
 
     return (
         <AnimatePresence>
@@ -81,12 +82,12 @@ export function FilePreviewModal({
                         {/* Content (PDF Viewer) */}
                         <div className="flex-1 bg-white w-full h-full relative overflow-hidden">
                             <object
-                                data={fileUrl}
+                                data={displayUrl}
                                 type="application/pdf"
                                 className="w-full h-full"
                             >
                                 <iframe
-                                    src={fileUrl}
+                                    src={displayUrl}
                                     className="w-full h-full border-0"
                                     title={title}
                                 >
