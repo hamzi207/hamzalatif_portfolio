@@ -24,11 +24,11 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-3" onClick={() => setIsMobileMenuOpen(false)}>
-            <div className="w-8 h-8 rounded-full overflow-hidden border border-border">
+            <div className="w-8 h-8">
               <img
-                src="/assets/profile_image_mhl.png"
-                alt="Hamza Latif"
-                className="w-full h-full object-cover"
+                src="/favicon.svg"
+                alt="HL Logo"
+                className="w-full h-full object-contain"
               />
             </div>
             <span className="text-xl font-bold tracking-tight text-foreground">
