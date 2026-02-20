@@ -196,7 +196,9 @@ export function About() {
                     <h4 className="text-foreground">AI Project Manager (AI Product & Delivery Focus)</h4>
                     <span className="text-sm text-muted-foreground">09/2025 - 02/2026</span>
                   </div>
-                  <p className="text-primary font-medium">neuefische GmbH</p>
+                  <p className="text-primary font-medium">
+                    <a href="https://www.neuefische.de" target="_blank" rel="noopener noreferrer" className="hover:underline">neuefische GmbH</a>
+                  </p>
                   <p className="text-muted-foreground">Berlin, Germany</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
                     <li>Built and delivered an ML-powered B2B SaaS product ("AI Compass") from discovery to deployment.</li>
@@ -210,7 +212,9 @@ export function About() {
                     <h4 className="text-foreground">Senior Product Owner / Digital Project Lead</h4>
                     <span className="text-sm text-muted-foreground">07/2023 - 06/2025</span>
                   </div>
-                  <p className="text-primary font-medium">Klarstein (Berlin Brands Group)</p>
+                  <p className="text-primary font-medium">
+                    <a href="https://www.klarstein.de" target="_blank" rel="noopener noreferrer" className="hover:underline">Klarstein (Berlin Brands Group)</a>
+                  </p>
                   <p className="text-muted-foreground">Berlin, Germany</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
                     <li>Supervised Agile delivery of large-scale e-commerce platforms and internal digital systems.</li>
@@ -224,7 +228,9 @@ export function About() {
                     <h4 className="text-foreground">Product Owner / Digital Project Manager</h4>
                     <span className="text-sm text-muted-foreground">11/2021 - 02/2023</span>
                   </div>
-                  <p className="text-primary font-medium">Zennova Home</p>
+                  <p className="text-primary font-medium">
+                    <a href="https://zennovacarpet.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">Zennova Group</a>
+                  </p>
                   <p className="text-muted-foreground">Abu Dhabi, UAE</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
                     <li>Guided ERP system development and enterprise-wide implementation.</li>
@@ -237,7 +243,9 @@ export function About() {
                     <h4 className="text-foreground">Product Owner / Digital Project Manager</h4>
                     <span className="text-sm text-muted-foreground">02/2017 - 10/2021</span>
                   </div>
-                  <p className="text-primary font-medium">BLOOMR</p>
+                  <p className="text-primary font-medium">
+                    <a href="https://www.bloomr.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">BLOOMR</a>
+                  </p>
                   <p className="text-muted-foreground">Ra's al Khaymah, UAE</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
                     <li>Led development and redesign of an e-commerce platform.</li>
@@ -252,6 +260,10 @@ export function About() {
                   </div>
                   <p className="text-primary font-medium">Loops & Logic</p>
                   <p className="text-muted-foreground">Lahore, Pakistan</p>
+                  <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
+                    <li>Developed PHP-based web applications in HRM and Healthcare domains</li>
+                    <li>Built backend systems and database integrations</li>
+                  </ul>
                 </div>
 
                 <div className="space-y-2">
@@ -283,6 +295,11 @@ export function About() {
                     <span className="text-sm text-muted-foreground">2013 - 2016</span>
                   </div>
                   <p className="text-muted-foreground">University of Sargodha</p>
+                  <div className="flex items-center gap-4 mt-1">
+                    <button onClick={() => openPreview("/assets/University_Degree-MSc_IT.pdf", "Master of Information Technology")} className="flex items-center text-primary hover:underline cursor-pointer text-sm">
+                      <FileText className="w-3 h-3 mr-1" /> Preview Degree
+                    </button>
+                  </div>
                 </div>
                 <div className="space-y-2">
                   <div className="flex items-baseline justify-between">
@@ -290,6 +307,11 @@ export function About() {
                     <span className="text-sm text-muted-foreground">2011 - 2013</span>
                   </div>
                   <p className="text-muted-foreground">University of Sargodha</p>
+                  <div className="flex items-center gap-4 mt-1">
+                    <button onClick={() => openPreview("/assets/BA-UOS.pdf", "Bachelors Degree")} className="flex items-center text-primary hover:underline cursor-pointer text-sm">
+                      <FileText className="w-3 h-3 mr-1" /> Preview Degree
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
