@@ -24,11 +24,11 @@ export function Navbar() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center space-x-3" onClick={() => setIsMobileMenuOpen(false)}>
-            <div className="w-8 h-8">
+            <div className="w-12 h-12 overflow-hidden flex items-center justify-center">
               <img
                 src="/assets/logo/H2_logo_primary_text.svg"
                 alt="H2 Logo"
-                className="w-full h-full object-contain"
+                className="w-full h-full object-contain scale-[2.5]"
               />
             </div>
             <span className="text-xl font-bold tracking-tight text-foreground">
