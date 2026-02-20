@@ -324,21 +324,21 @@ export function About() {
               </div>
 
               <div className="grid md:grid-cols-2 gap-6 pl-0 md:pl-9">
-                {/* Google AI Essentials */}
+                {/* AI Project Manager */}
                 <div className="group p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-all duration-200 flex sm:items-start gap-4">
                   <div className="w-16 h-16 shrink-0 bg-white rounded-md p-1 border border-border overflow-hidden">
-                    <img src="/assets/google_ai_essentials_badge.png" alt="Google AI Essentials" className="w-full h-full object-contain" />
+                    <img src="/assets/aipm_badge.png" alt="AI Project Manager" className="w-full h-full object-contain" />
                   </div>
                   <div className="space-y-2 flex-1">
                     <div>
-                      <h4 className="font-medium text-foreground group-hover:text-primary transition-colors">Google AI Essentials</h4>
-                      <p className="text-sm text-muted-foreground">Google</p>
+                      <h4 className="font-medium text-foreground group-hover:text-primary transition-colors">AI Project Manager</h4>
+                      <p className="text-sm text-muted-foreground">Neuefische</p>
                     </div>
                     <div className="flex gap-3 text-sm">
-                      <button onClick={() => openPreview("/assets/Google_AI_Essentials.pdf", "Google AI Essentials")} className="flex items-center text-primary hover:underline cursor-pointer">
+                      <button onClick={() => openPreview("/assets/aipm_credential_2026_neuefische.pdf", "AI Project Manager")} className="flex items-center text-primary hover:underline cursor-pointer">
                         <FileText className="w-3 h-3 mr-1" /> Preview
                       </button>
-                      <a href="https://coursera.org/verify/82SMAVMRS7KF" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                      <a href="https://eu.credential.net/68f784ce-a693-4c0b-8990-1d469610c688#acc.cgZJHsPX" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                         <Award className="w-3 h-3 mr-1" /> Verify
                       </a>
                     </div>
@@ -366,27 +366,6 @@ export function About() {
                   </div>
                 </div>
 
-                {/* PSM I */}
-                <div className="group p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-all duration-200 flex sm:items-start gap-4">
-                  <div className="w-16 h-16 shrink-0 bg-white rounded-md p-1 border border-border overflow-hidden">
-                    <img src="/assets/PSMI-Badge.png" alt="PSM I" className="w-full h-full object-contain" />
-                  </div>
-                  <div className="space-y-2 flex-1">
-                    <div>
-                      <h4 className="font-medium text-foreground group-hover:text-primary transition-colors">Professional Scrum Master I</h4>
-                      <p className="text-sm text-muted-foreground">Scrum.org</p>
-                    </div>
-                    <div className="flex gap-3 text-sm">
-                      <button onClick={() => openPreview("/assets/ScrumOrg_Professional_Scrum_Master_I.pdf", "PSM I Certification")} className="flex items-center text-primary hover:underline cursor-pointer">
-                        <FileText className="w-3 h-3 mr-1" /> Preview
-                      </button>
-                      <a href="https://www.scrum.org/certificates/1224816" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
-                        <Award className="w-3 h-3 mr-1" /> Verify
-                      </a>
-                    </div>
-                  </div>
-                </div>
-
                 {/* CSPO */}
                 <div className="group p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-all duration-200 flex sm:items-start gap-4">
                   <div className="w-16 h-16 shrink-0 bg-white rounded-md p-1 border border-border overflow-hidden">
@@ -408,28 +387,47 @@ export function About() {
                   </div>
                 </div>
 
-                {/* AI Project Manager */}
+                {/* PSM I */}
                 <div className="group p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-all duration-200 flex sm:items-start gap-4">
                   <div className="w-16 h-16 shrink-0 bg-white rounded-md p-1 border border-border overflow-hidden">
-                    <img src="/assets/aipm_badge.png" alt="AI Project Manager" className="w-full h-full object-contain" />
+                    <img src="/assets/PSMI-Badge.png" alt="PSM I" className="w-full h-full object-contain" />
                   </div>
                   <div className="space-y-2 flex-1">
                     <div>
-                      <h4 className="font-medium text-foreground group-hover:text-primary transition-colors">AI Project Manager</h4>
-                      <p className="text-sm text-muted-foreground">Neuefische</p>
+                      <h4 className="font-medium text-foreground group-hover:text-primary transition-colors">Professional Scrum Master I</h4>
+                      <p className="text-sm text-muted-foreground">Scrum.org</p>
                     </div>
                     <div className="flex gap-3 text-sm">
-                      <button onClick={() => openPreview("/assets/aipm_credential_2026_neuefische.pdf", "AI Project Manager")} className="flex items-center text-primary hover:underline cursor-pointer">
+                      <button onClick={() => openPreview("/assets/ScrumOrg_Professional_Scrum_Master_I.pdf", "PSM I Certification")} className="flex items-center text-primary hover:underline cursor-pointer">
                         <FileText className="w-3 h-3 mr-1" /> Preview
                       </button>
-                      <a href="https://eu.credential.net/68f784ce-a693-4c0b-8990-1d469610c688#acc.cgZJHsPX" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                      <a href="https://www.scrum.org/certificates/1224816" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
                         <Award className="w-3 h-3 mr-1" /> Verify
                       </a>
                     </div>
                   </div>
                 </div>
 
-
+                {/* Google AI Essentials */}
+                <div className="group p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-all duration-200 flex sm:items-start gap-4">
+                  <div className="w-16 h-16 shrink-0 bg-white rounded-md p-1 border border-border overflow-hidden">
+                    <img src="/assets/google_ai_essentials_badge.png" alt="Google AI Essentials" className="w-full h-full object-contain" />
+                  </div>
+                  <div className="space-y-2 flex-1">
+                    <div>
+                      <h4 className="font-medium text-foreground group-hover:text-primary transition-colors">Google AI Essentials</h4>
+                      <p className="text-sm text-muted-foreground">Google</p>
+                    </div>
+                    <div className="flex gap-3 text-sm">
+                      <button onClick={() => openPreview("/assets/Google_AI_Essentials.pdf", "Google AI Essentials")} className="flex items-center text-primary hover:underline cursor-pointer">
+                        <FileText className="w-3 h-3 mr-1" /> Preview
+                      </button>
+                      <a href="https://coursera.org/verify/82SMAVMRS7KF" target="_blank" rel="noopener noreferrer" className="flex items-center text-muted-foreground hover:text-primary transition-colors">
+                        <Award className="w-3 h-3 mr-1" /> Verify
+                      </a>
+                    </div>
+                  </div>
+                </div>
 
                 {/* Business Analysis */}
                 <div className="group p-4 bg-card border border-border rounded-lg hover:border-primary/50 transition-all duration-200 flex sm:items-start gap-4">

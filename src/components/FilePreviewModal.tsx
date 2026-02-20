@@ -83,11 +83,13 @@ export function FilePreviewModal({
                         {/* Content (PDF Viewer) */}
                         <div className="flex-1 bg-white w-full h-full relative overflow-hidden">
                             {isFirefox ? (
-                                <embed
-                                    src={displayUrl}
-                                    type="application/pdf"
-                                    className="w-full h-full"
-                                />
+                                <div className="w-full h-full overflow-hidden relative">
+                                    <embed
+                                        src={displayUrl}
+                                        type="application/pdf"
+                                        className={`w-full ${!isResume ? 'h-[calc(100%+48px)] -mt-[48px]' : 'h-full'}`}
+                                    />
+                                </div>
                             ) : (
                                 <object
                                     data={displayUrl}
