@@ -76,6 +76,7 @@ export function AICompassCaseStudy() {
           </div>
 
           {/* Hero Image */}
+          {/* Checking */}
           <div className="aspect-video bg-card rounded-lg border border-border overflow-hidden">
             <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-indigo-500/20 to-indigo-500/5">
               <div className="text-center space-y-4 p-8">
