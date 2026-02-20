@@ -26,7 +26,7 @@ export function Navbar() {
           <Link to="/" className="flex items-center space-x-3" onClick={() => setIsMobileMenuOpen(false)}>
             <div className="w-8 h-8">
               <img
-                src="/assets/logo/H2_logo_primary_4F46E5.png"
+                src="/assets/logo/H2_logo_primary_text.svg"
                 alt="H2 Logo"
                 className="w-full h-full object-contain"
               />
