@@ -39,12 +39,13 @@ export function About() {
                 AI Product Manager and Product Owner with 8+ years of experience building digital and AI-enabled products. Specialized in explainable AI, ML-driven SaaS platforms, and data-informed product decision-making.
               </p>
 
-              <div className="relative w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-2 border-primary/20 shadow-lg">
+              <div className="relative w-full max-w-sm aspect-square md:aspect-[3/4] overflow-hidden rounded-2xl border border-border shadow-2xl mx-auto md:mx-0">
                 <img
-                  src="/assets/profile_image_mhl.png"
+                  src="/assets/profile_image_2026.jpg"
                   alt="Hamza Latif"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover object-top"
                 />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60" />
               </div>
 
               {/* Contact Details */}
