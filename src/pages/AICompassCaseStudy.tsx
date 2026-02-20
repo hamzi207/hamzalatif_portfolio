@@ -110,7 +110,7 @@ export function AICompassCaseStudy() {
           </div>
 
           {/* CTA */}
-          <div className="pt-8 border-t border-border">
+          <div className="pt-8 border-t border-border flex flex-col sm:flex-row sm:items-center justify-between gap-6">
             <Link
               to="/contact"
               className="inline-flex items-center text-indigo-600 hover:text-indigo-500 transition-colors duration-200"
@@ -121,7 +121,7 @@ export function AICompassCaseStudy() {
               href="https://www.the-ai-compass.de"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 bg-card border border-border rounded-lg hover:border-indigo-500/50 transition-colors duration-200 text-sm"
+              className="inline-flex items-center text-indigo-600 hover:text-indigo-500 transition-colors duration-200 font-medium"
             >
               Visit Live Project
               <ExternalLink className="w-4 h-4 ml-2" />
