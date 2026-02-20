@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
-import { ArrowLeft, CheckCircle2 } from "lucide-react";
+import { ArrowLeft, CheckCircle2, ExternalLink } from "lucide-react";
 import { SEO } from "../components/SEO";
 
 export function AICompassCaseStudy() {
@@ -37,14 +37,24 @@ export function AICompassCaseStudy() {
           transition={{ duration: 0.6 }}
           className="space-y-16"
         >
-          {/* Back Link */}
-          <Link
-            to="/projects"
-            className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors duration-200"
-          >
-            <ArrowLeft className="w-4 h-4 mr-2" />
-            Back to Projects
-          </Link>
+          <div className="flex items-center justify-between">
+            <Link
+              to="/projects"
+              className="inline-flex items-center text-muted-foreground hover:text-foreground transition-colors duration-200"
+            >
+              <ArrowLeft className="w-4 h-4 mr-2" />
+              Back to Projects
+            </Link>
+            <a
+              href="https://www.the-ai-compass.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 bg-indigo-600 text-white rounded-lg hover:bg-indigo-500 transition-colors duration-200 text-sm font-medium"
+            >
+              Visit Live Project
+              <ExternalLink className="w-4 h-4 ml-2" />
+            </a>
+          </div>
 
           {/* Header */}
           <div className="space-y-6">
@@ -106,6 +116,15 @@ export function AICompassCaseStudy() {
             >
               Interested in discussing this project in detail? Let's talk →
             </Link>
+            <a
+              href="https://www.the-ai-compass.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 bg-card border border-border rounded-lg hover:border-indigo-500/50 transition-colors duration-200 text-sm"
+            >
+              Visit Live Project
+              <ExternalLink className="w-4 h-4 ml-2" />
+            </a>
           </div>
         </motion.div>
       </div>
