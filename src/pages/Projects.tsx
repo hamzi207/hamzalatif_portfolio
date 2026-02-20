@@ -71,7 +71,7 @@ const projects: (Project & { theme?: ProjectTheme })[] = [
   {
     id: "klarstein-personalization",
     title: "Klarstein Personalization & Search",
-    description: "Managed strategic migrations for Search (FactFinder to Bloomreach) and Personalization, optimizing the digital experience for a large-scale e-commerce platform.",
+    description: "Managed strategic migrations for Search and Personalization, optimizing the digital experience for a large-scale e-commerce platform.",
     tags: ["Personalization", "Search", "E-commerce"],
     icon: Sparkles,
     featured: false,
