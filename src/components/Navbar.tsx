@@ -28,7 +28,7 @@ export function Navbar() {
               <img
                 src="/assets/logo/H2_logo_primary_text.svg"
                 alt="H2 Logo"
-                className="w-full h-full object-contain scale-[2.5]"
+                className="w-full h-full object-contain scale-[2]"
               />
             </div>
             <span className="text-xl font-bold tracking-tight text-foreground">
