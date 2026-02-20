@@ -38,9 +38,9 @@ export function Footer() {
                 href="https://www.linkedin.com/in/mhlatif207/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-card border border-border rounded-lg flex items-center justify-center hover:border-primary/50 transition-colors duration-200"
+                className="w-10 h-10 bg-card border border-border rounded-lg flex items-center justify-center hover:border-primary/50 transition-colors duration-200 group"
               >
-                <Linkedin className="w-5 h-5 text-muted-foreground" />
+                <Linkedin className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-200" />
               </a>
               <a
                 href="https://www.xing.com/profile/MuhammadHamza_Latif"
@@ -79,15 +79,15 @@ export function Footer() {
                 href="https://github.com/hamzi207"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-10 h-10 bg-card border border-border rounded-lg flex items-center justify-center hover:border-primary/50 transition-colors duration-200"
+                className="w-10 h-10 bg-card border border-border rounded-lg flex items-center justify-center hover:border-primary/50 transition-colors duration-200 group"
               >
-                <Github className="w-5 h-5 text-muted-foreground" />
+                <Github className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-200" />
               </a>
               <a
                 href="mailto:contact@hamzalatif.com"
-                className="w-10 h-10 bg-card border border-border rounded-lg flex items-center justify-center hover:border-primary/50 transition-colors duration-200"
+                className="w-10 h-10 bg-card border border-border rounded-lg flex items-center justify-center hover:border-primary/50 transition-colors duration-200 group"
               >
-                <Mail className="w-5 h-5 text-muted-foreground" />
+                <Mail className="w-5 h-5 text-muted-foreground group-hover:text-primary transition-colors duration-200" />
               </a>
             </div>
           </div>
