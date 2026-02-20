@@ -457,8 +457,9 @@ export function About() {
             <div className="pt-8 border-t border-border space-y-6">
               <h3 className="text-foreground">Beyond Work</h3>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                When I'm not thinking about product strategy, you'll find me exploring new coffee shops,
-                hiking, or reading about behavioral economics.
+                When I'm not thinking about product strategy, you'll find me immersing myself in the Marvel and DC universes,
+                experimenting with new recipes, or gaming. I'm also a car enthusiast and avid traveler who loves curating
+                collections of sneakers, watches, and sunglasses—usually with a Bollywood playlist in the background.
               </p>
             </div>
           </motion.div>
