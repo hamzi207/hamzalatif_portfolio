@@ -15,6 +15,7 @@ const PLACEHOLDERS = [
     { id: "p2", gradient: "from-emerald-500/20 to-teal-500/20", icon: ImageIcon },
     { id: "p3", gradient: "from-blue-500/20 to-cyan-500/20", icon: ImageIcon },
     { id: "p4", gradient: "from-purple-500/20 to-pink-500/20", icon: Instagram },
+    { id: "p5", gradient: "from-orange-500/20 to-red-500/20", icon: ImageIcon },
 ];
 
 export function InstagramFeed() {
@@ -30,7 +31,7 @@ export function InstagramFeed() {
             try {
                 // Using the Basic Display API endpoint because the token is IGA...
                 const response = await fetch(
-                    `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&limit=4&access_token=${ACCESS_TOKEN}`
+                    `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&limit=5&access_token=${ACCESS_TOKEN}`
                 );
 
                 if (!response.ok) throw new Error("Failed to fetch");
@@ -54,7 +55,7 @@ export function InstagramFeed() {
                 <div className="flex items-center justify-between mb-12">
                     <div className="space-y-1">
                         <h2 className="text-2xl font-semibold text-foreground flex items-center gap-2">
-                            <Instagram className="w-6 h-6" />
+                            <img src="/assets/instagram_color.svg" alt="Instagram" className="w-6 h-6" />
                             Life & Interests
                         </h2>
                         <p className="text-muted-foreground text-sm">
@@ -68,7 +69,7 @@ export function InstagramFeed() {
                         <Loader2 className="w-8 h-8 animate-spin text-primary" />
                     </div>
                 ) : (
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                         {(posts.length > 0 ? posts : PLACEHOLDERS).map((item) => {
                             const isPost = "media_url" in item;
                             if (isPost) {
