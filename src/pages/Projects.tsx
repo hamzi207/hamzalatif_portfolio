@@ -35,8 +35,8 @@ const projects: (Project & { theme?: ProjectTheme })[] = [
   {
     id: "ai-compass",
     title: "AI Compass",
-    subtitle: "Strategic AI Maturity Assessment & Benchmarking Engine",
-    description: "Self-service AI maturity assessment and benchmarking tool for SMEs. Converts inputs into explainable maturity scores and actionable roadmaps.",
+    subtitle: "AI Maturity Assessment Platform",
+    description: "SaaS platform evaluating AI readiness and maturity across key business dimensions.",
     tags: ["Maturity Assessment", "SME", "Actionable Roadmap"],
     icon: Target,
     image: "/assets/ai-compass-logo.svg",
@@ -53,8 +53,8 @@ const projects: (Project & { theme?: ProjectTheme })[] = [
   {
     id: "productlogik",
     title: "ProductLogik",
-    subtitle: "AI-Powered Product Feedback Analysis & Agile Anti-Pattern Detection",
-    description: "AI-powered platform that transforms user feedback into actionable insights while detecting agile anti-patterns like 'Feature Factory' behavior.",
+    subtitle: "AI Product Intelligence SaaS Platform",
+    description: "AI-native SaaS platform transforming customer feedback into strategic product decision intelligence.",
     tags: ["Feedback Analysis", "Anti-Pattern Detection", "Agile"],
     icon: Brain,
     image: "/assets/productlogik-logo.svg",

@@ -91,15 +91,15 @@ export function About() {
 
               <div className="flex flex-wrap gap-4 pt-4">
                 <button
-                  onClick={() => openPreview("/assets/Muhammad_Hamza_Latif_Resume.pdf", "Muhammad Hamza Latif - Resume")}
+                  onClick={() => openPreview("/assets/Muhammad_Hamza_Latif_Resume_v2.pdf", "Muhammad Hamza Latif - Resume")}
                   className="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-200 cursor-pointer"
                 >
                   <FileText className="w-4 h-4 mr-2" />
                   View CV
                 </button>
                 <a
-                  href="/assets/Muhammad_Hamza_Latif_Resume.pdf"
-                  download="Muhammad_Hamza_Latif_Resume.pdf"
+                  href="/assets/Muhammad_Hamza_Latif_Resume_v2.pdf"
+                  download="Muhammad_Hamza_Latif_Resume_v2.pdf"
                   className="inline-flex items-center px-4 py-2 bg-card text-foreground border border-border rounded-lg hover:border-primary/50 transition-colors duration-200"
                 >
                   <Download className="w-4 h-4 mr-2" />
@@ -198,13 +198,16 @@ export function About() {
                     <span className="text-sm text-muted-foreground">09/2025 - 02/2026</span>
                   </div>
                   <p className="text-primary font-medium">
-                    <a href="https://www.neuefische.de" target="_blank" rel="noopener noreferrer" className="hover:underline">neuefische GmbH</a>
+                    <a href="https://www.neuefische.de" target="_blank" rel="noopener noreferrer" className="hover:underline">neuefische GmbH - School and Pool for Digital Talent</a>
                   </p>
                   <p className="text-muted-foreground">Berlin, Germany</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
                     <li>Built and delivered an ML-powered B2B SaaS product ("AI Compass") from discovery to deployment.</li>
-                    <li>Designed a dual-engine system combining deterministic scoring with ML models (clustering, anomaly detection).</li>
+                    <li>Defined product vision, roadmap, prioritization, and measurable outcomes.</li>
+                    <li>Translated business challenges into structured AI product requirements and user stories.</li>
+                    <li>Designed a dual-engine system combining deterministic scoring with ML models (clustering, anomaly detection, peer benchmarking).</li>
                     <li>Coordinated frontend (React), backend (FastAPI), and ML workflows in Agile sprints.</li>
+                    <li>Applied explainable and responsible AI principles to ensure transparency and stakeholder trust.</li>
                   </ul>
                 </div>
 
@@ -214,13 +217,15 @@ export function About() {
                     <span className="text-sm text-muted-foreground">07/2023 - 06/2025</span>
                   </div>
                   <p className="text-primary font-medium">
-                    <a href="https://www.klarstein.de" target="_blank" rel="noopener noreferrer" className="hover:underline">Klarstein (Berlin Brands Group)</a>
+                    <a href="https://www.klarstein.de" target="_blank" rel="noopener noreferrer" className="hover:underline">Klarstein (formerly Berlin Brands Group)</a>
                   </p>
                   <p className="text-muted-foreground">Berlin, Germany</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
                     <li>Supervised Agile delivery of large-scale e-commerce platforms and internal digital systems.</li>
-                    <li>Managed strategic tool migrations: Search (FactFinder → Bloomreach), Personalization (Dynamic Yield), Consent (UserCentrics).</li>
+                    <li>Directed UX/UI redesign of high-traffic websites and IoT mobile applications.</li>
+                    <li>Managed strategic tool migrations: Search (FactFinder → Bloomreach), Personalization (Dynamic Yield → Bloomreach), Consent (OneTrust → UserCentrics).</li>
                     <li>Oversaw development of a custom in-house CMS for marketing campaign management.</li>
+                    <li>Ensured GDPR-compliant implementations and executive-level stakeholder alignment.</li>
                   </ul>
                 </div>
 
@@ -230,12 +235,14 @@ export function About() {
                     <span className="text-sm text-muted-foreground">11/2021 - 02/2023</span>
                   </div>
                   <p className="text-primary font-medium">
-                    <a href="https://zennovacarpet.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">Zennova Group</a>
+                    <a href="https://zennovacarpet.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">Zennova Home</a>
                   </p>
-                  <p className="text-muted-foreground">Abu Dhabi, UAE</p>
+                  <p className="text-muted-foreground">Abu Dhabi, United Arab Emirates</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
                     <li>Guided ERP system development and enterprise-wide implementation.</li>
-                    <li>Managed the launch of four e-commerce platforms and HRM applications.</li>
+                    <li>Managed the launch of four e-commerce platforms.</li>
+                    <li>Oversaw HRM web and mobile application development.</li>
+                    <li>Drove digital transformation across operations and procurement.</li>
                   </ul>
                 </div>
 
@@ -247,10 +254,11 @@ export function About() {
                   <p className="text-primary font-medium">
                     <a href="https://www.bloomr.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">BLOOMR</a>
                   </p>
-                  <p className="text-muted-foreground">Ra's al Khaymah, UAE</p>
+                  <p className="text-muted-foreground">Ra's al Khaymah, United Arab Emirates</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
                     <li>Led development and redesign of an e-commerce platform.</li>
-                    <li>Managed IT infrastructure and cloud migration of accounting systems.</li>
+                    <li>Managed IT infrastructure implementation across retail and warehouse.</li>
+                    <li>Directed cloud migration of accounting systems.</li>
                   </ul>
                 </div>
 
@@ -275,8 +283,8 @@ export function About() {
                   <p className="text-primary font-medium">Revenue Department Divisional Office</p>
                   <p className="text-muted-foreground">Sargodha, Pakistan</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
-                    <li>Supported IT systems across government departments.</li>
-                    <li>Maintained system stability and reporting infrastructure.</li>
+                    <li>Supported IT systems across government departments</li>
+                    <li>Maintained system stability and reporting infrastructure</li>
                   </ul>
                 </div>
 

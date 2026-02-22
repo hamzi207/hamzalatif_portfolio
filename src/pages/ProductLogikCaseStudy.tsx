@@ -61,7 +61,7 @@ export function ProductLogikCaseStudy() {
           <div className="space-y-6">
             <h1 className="text-foreground">ProductLogik</h1>
             <p className="text-2xl text-muted-foreground leading-relaxed">
-              AI-Powered Product Feedback Analysis & Agile Anti-Pattern Detection.
+              AI-native SaaS platform transforming customer feedback into strategic product decision intelligence.
             </p>
             <div className="flex flex-wrap gap-2 pt-4">
               <span className="px-3 py-1 bg-card text-sm text-muted-foreground rounded-full border border-border">

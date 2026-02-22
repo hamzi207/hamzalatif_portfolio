@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
-import { ArrowLeft, CheckCircle2, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink } from "lucide-react";
 import { SEO } from "../components/SEO";
 
 export function AICompassCaseStudy() {
@@ -60,7 +60,7 @@ export function AICompassCaseStudy() {
           <div className="space-y-6">
             <h1 className="text-foreground">AI Compass</h1>
             <p className="text-2xl text-muted-foreground leading-relaxed">
-              Self-service AI maturity assessment and benchmarking tool for SMEs.
+              SaaS platform evaluating AI readiness and maturity across key business dimensions.
             </p>
             <div className="flex flex-wrap gap-2 pt-4">
               <span className="px-3 py-1 bg-card text-sm text-muted-foreground rounded-full border border-border">

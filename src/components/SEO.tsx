@@ -11,7 +11,7 @@ interface SEOProps {
 export function SEO({
     title = "Hamza Latif - AI Product Manager & Engineer",
     description = "Detailed portfolio of Hamza Latif, specializing in AI Product Management, Machine Learning, and Strategic Product Execution.",
-    image = "/assets/images/hero/hero_image_1.jpeg",
+    image = "/assets/og-image.png",
     url = "https://hamzalatif.com",
     type = "website"
 }: SEOProps) {
