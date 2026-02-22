@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Briefcase, GraduationCap, Award, FileText, Download, Code2, Globe, Mail, Linkedin, MapPin } from "lucide-react";
+import { Briefcase, GraduationCap, Award, FileText, Download, Code2, Globe, Mail, Linkedin, MapPin, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { Link } from "react-router";
 import { FilePreviewModal } from "../components/FilePreviewModal";
@@ -87,9 +87,9 @@ export function About() {
                 </div>
               </div>
 
-              {/* Right Image and CTA */}
-              <div className="shrink-0 w-full md:w-[320px] lg:w-[380px] flex flex-col items-center gap-6">
-                <div className="relative w-full aspect-square md:aspect-[3/4] overflow-hidden rounded-2xl border border-border shadow-2xl">
+              {/* Right Image */}
+              <div className="shrink-0 w-full md:w-[320px] lg:w-[380px] flex justify-center md:justify-end">
+                <div className="relative w-full max-w-sm aspect-square md:aspect-[3/4] overflow-hidden rounded-2xl border border-border shadow-2xl">
                   <img
                     src="/assets/profile_image_2026.jpg"
                     alt="Hamza Latif"
@@ -97,13 +97,6 @@ export function About() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60" />
                 </div>
-
-                <Link
-                  to="/projects"
-                  className="w-full inline-flex items-center justify-center px-8 py-4 bg-card text-foreground rounded-lg border border-border hover:border-primary/50 transition-colors duration-200 font-medium shadow-sm hover:shadow-md"
-                >
-                  My Projects
-                </Link>
               </div>
             </div>
 
@@ -467,6 +460,21 @@ export function About() {
                 experimenting with new recipes, or gaming. I'm also a car enthusiast and avid traveler who loves curating
                 collections of sneakers, watches, and sunglasses—usually with a Bollywood playlist in the background.
               </p>
+            </div>
+
+            {/* CTA Section */}
+            <div className="mt-16 pt-16 border-t border-border border-dashed text-center space-y-6">
+              <h2 className="text-3xl font-bold text-foreground">See My Work in Action</h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Explore the products I've built, the strategies I've designed, and the AI solutions I've brought to life.
+              </p>
+              <Link
+                to="/projects"
+                className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-200 shadow-sm hover:shadow-md font-medium"
+              >
+                My Projects
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Link>
             </div>
           </motion.div>
         </div >
