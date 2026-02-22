@@ -33,85 +33,81 @@ export function About() {
             className="space-y-16"
           >
             {/* Header */}
-            <div className="flex flex-col-reverse md:flex-row gap-8 lg:gap-16 items-center md:items-start lg:items-center">
-              {/* Left Content */}
-              <div className="flex-1 space-y-6 w-full">
-                <h1 className="text-foreground">About Me</h1>
-                <p className="text-xl text-muted-foreground leading-relaxed">
-                  AI Product Manager and Product Owner with 8+ years of experience building digital and AI-enabled products. Specialized in explainable AI, ML-driven SaaS platforms, and data-informed product decision-making.
-                </p>
+            <div className="space-y-6">
+              <h1 className="text-foreground">About Me</h1>
+              <p className="text-xl text-muted-foreground leading-relaxed">
+                AI Product Manager and Product Owner with 8+ years of experience building digital and AI-enabled products. Specialized in explainable AI, ML-driven SaaS platforms, and data-informed product decision-making.
+              </p>
 
-                {/* Contact Details */}
-                <div className="flex flex-wrap gap-4 text-muted-foreground pt-2">
-                  <a href="mailto:contact@hamzalatif.com" className="flex items-center hover:text-primary transition-colors">
-                    <Mail className="w-4 h-4 mr-2" />
-                    contact@hamzalatif.com
-                  </a>
-                  <span className="flex items-center">
-                    <MapPin className="w-4 h-4 mr-2" />
-                    Berlin, Germany
-                  </span>
-                  <a href="https://www.linkedin.com/in/mhlatif207/" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary transition-colors">
-                    <Linkedin className="w-4 h-4 mr-2" />
-                    /in/mhlatif207/
-                  </a>
-                  <a href="https://www.xing.com/profile/MuhammadHamza_Latif" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary transition-colors">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="currentColor"
-                      className="w-4 h-4 mr-2"
-                    >
-                      <path d="M16.33 5.05L12.87 11.2 16.5 17.5h4.48L17.2 11.2l3.6-6.15h-4.47zM9.9 11.08l-2.7-4.75H4.6l2.7 4.75-4.13 7.3h2.6l4.13-7.3z" />
-                    </svg>
-                    /MuhammadHamza_Latif
-                  </a>
-                  <a href="https://x.com/hklatif207" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary transition-colors">
-                    <svg
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      stroke="currentColor"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      className="w-4 h-4 mr-2"
-                    >
-                      <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-                      <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-                    </svg>
-                    /hklatif207
-                  </a>
-                </div>
-
-                <div className="flex flex-wrap gap-4 pt-6">
-                  <button
-                    onClick={() => openPreview("/assets/Muhammad_Hamza_Latif_Resume_v2.pdf", "Muhammad Hamza Latif - Resume")}
-                    className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors duration-200 cursor-pointer shadow-sm hover:shadow-md"
-                  >
-                    <FileText className="w-5 h-5 mr-2" />
-                    View CV
-                  </button>
-                  <a
-                    href="/assets/Muhammad_Hamza_Latif_Resume_v2.pdf"
-                    download="Muhammad_Hamza_Latif_Resume_v2.pdf"
-                    className="inline-flex items-center px-6 py-3 bg-card text-foreground font-medium border border-border rounded-lg hover:border-primary/50 transition-colors duration-200 shadow-sm hover:shadow-md"
-                  >
-                    <Download className="w-5 h-5 mr-2" />
-                    Download CV
-                  </a>
-                </div>
+              <div className="relative w-full max-w-sm aspect-square md:aspect-[3/4] overflow-hidden rounded-2xl border border-border shadow-2xl mx-auto md:mx-0">
+                <img
+                  src="/assets/profile_image_2026.jpg"
+                  alt="Hamza Latif"
+                  className="w-full h-full object-cover object-top"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60" />
               </div>
 
-              {/* Right Image */}
-              <div className="shrink-0 w-full md:w-[320px] lg:w-[380px] flex justify-center md:justify-end">
-                <div className="relative w-full max-w-sm aspect-square md:aspect-[3/4] overflow-hidden rounded-2xl border border-border shadow-2xl">
-                  <img
-                    src="/assets/profile_image_2026.jpg"
-                    alt="Hamza Latif"
-                    className="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700 ease-in-out"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-60" />
-                </div>
+              {/* Contact Details */}
+              <div className="flex flex-wrap gap-6 text-muted-foreground">
+                <a href="mailto:contact@hamzalatif.com" className="flex items-center hover:text-primary transition-colors">
+                  <Mail className="w-4 h-4 mr-2" />
+                  contact@hamzalatif.com
+                </a>
+                <span className="flex items-center">
+                  <MapPin className="w-4 h-4 mr-2" />
+                  Berlin, Germany
+                </span>
+                <a href="https://www.linkedin.com/in/mhlatif207/" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary transition-colors">
+                  <Linkedin className="w-4 h-4 mr-2" />
+                  /in/mhlatif207/
+                </a>
+                <a href="https://www.xing.com/profile/MuhammadHamza_Latif" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary transition-colors">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-4 h-4 mr-2"
+                  >
+                    <path d="M16.33 5.05L12.87 11.2 16.5 17.5h4.48L17.2 11.2l3.6-6.15h-4.47zM9.9 11.08l-2.7-4.75H4.6l2.7 4.75-4.13 7.3h2.6l4.13-7.3z" />
+                  </svg>
+                  /MuhammadHamza_Latif
+                </a>
+                <a href="https://x.com/hklatif207" target="_blank" rel="noopener noreferrer" className="flex items-center hover:text-primary transition-colors">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="w-4 h-4 mr-2"
+                  >
+                    <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                    <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                  </svg>
+                  /hklatif207
+                </a>
               </div>
+
+              <div className="flex flex-wrap gap-4 pt-4">
+                <button
+                  onClick={() => openPreview("/assets/Muhammad_Hamza_Latif_Resume_v2.pdf", "Muhammad Hamza Latif - Resume")}
+                  className="inline-flex items-center px-4 py-2 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-200 cursor-pointer"
+                >
+                  <FileText className="w-4 h-4 mr-2" />
+                  View CV
+                </button>
+                <a
+                  href="/assets/Muhammad_Hamza_Latif_Resume_v2.pdf"
+                  download="Muhammad_Hamza_Latif_Resume_v2.pdf"
+                  className="inline-flex items-center px-4 py-2 bg-card text-foreground border border-border rounded-lg hover:border-primary/50 transition-colors duration-200"
+                >
+                  <Download className="w-4 h-4 mr-2" />
+                  Download CV
+                </a>
+              </div>
+
+
             </div>
 
             {/* Bio */}
