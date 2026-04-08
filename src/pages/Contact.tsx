@@ -6,7 +6,7 @@ export function Contact() {
   return (
     <div className="pt-32 pb-20 px-6 lg:px-8">
       <SEO title="Contact Me" description="Get in touch with Hamza Latif for product advisory, speaking engagements, or mentorship." />
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
