@@ -131,19 +131,25 @@ export function About() {
                   <div className="p-4 bg-card border border-border rounded-lg space-y-2">
                     <h4 className="font-medium text-foreground">Product & Agile</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      Product Ownership, Discovery, Roadmapping, Stakeholder Alignment, Scrum, Agile Delivery, Digital Transformation
+                      Product Ownership, Discovery, Roadmapping, OKR Definition, Backlog Prioritization, Stakeholder Alignment, User Story Mapping, UX/UI Optimization & CRO, KPI Tracking, Cross-functional Team Leadership, Scrum, Kanban, Agile Delivery, Digital Transformation, Jira, Confluence, Notion, Figma, Google Analytics, Hotjar, Power BI
                     </p>
                   </div>
                   <div className="p-4 bg-card border border-border rounded-lg space-y-2">
                     <h4 className="font-medium text-foreground">Tech Stack</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      Python, FastAPI, React, Next.js, Node.js, PHP, JavaScript, CSS, PostgreSQL, Supabase, SQL, WordPress, Shopify, Git
+                      Python, FastAPI, Scikit-learn, React, TypeScript, Next.js, Node.js, PHP, JavaScript, CSS, PostgreSQL, MySQL, Supabase, SQL, REST APIs, Stripe, Git
                     </p>
                   </div>
                   <div className="p-4 bg-card border border-border rounded-lg space-y-2">
                     <h4 className="font-medium text-foreground">Infrastructure & Tools</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       VPS Management, Vercel, Render, Nginx, GitHub CI/CD, Resend, Brevo
+                    </p>
+                  </div>
+                  <div className="p-4 bg-card border border-border rounded-lg space-y-2">
+                    <h4 className="font-medium text-foreground">E-Commerce & Marketplaces</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      Shopify, WordPress, WooCommerce, Amazon, Noon, Etsy, Bloomreach, Dynamic Yield
                     </p>
                   </div>
                 </div>
