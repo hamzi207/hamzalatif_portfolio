@@ -27,6 +27,7 @@ interface Project {
   tags: string[];
   icon: React.ElementType;
   image?: string;
+  customLogo?: React.ReactNode;
   featured: boolean;
   link: string | null;
 }
@@ -75,7 +76,12 @@ const projects: (Project & { theme?: ProjectTheme })[] = [
     description: "High-performance video streaming gateway bypassing third-party platform restrictions via self-managed architecture.",
     tags: ["Next.js", "VPS", "Supabase", "Resend", "TMDB API"],
     icon: PlayCircle,
-    image: "/assets/hetavideo-logo.svg",
+    customLogo: (
+      <span className="flex items-baseline gap-1 select-none">
+        <span className="text-2xl font-bold text-primary" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>η</span>
+        <span className="text-lg font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">HetaVideo</span>
+      </span>
+    ),
     featured: true,
     link: "/projects/hetavideo",
     theme: {
@@ -170,7 +176,9 @@ export function Projects() {
                         <div className="space-y-6 flex-1">
                           <div className={`w-14 h-14 ${theme.bg} rounded-lg flex items-center justify-center`}>
                             {/* @ts-ignore */}
-                            {project.image ? (
+                            {project.customLogo ? (
+                              <div className={`w-10 h-10 flex items-center justify-center ${theme.bg} rounded`}>{project.customLogo}</div>
+                            ) : project.image ? (
                               <img src={project.image} alt={project.title} className="w-10 h-10 object-contain" />
                             ) : (
                               <project.icon className={`w-7 h-7 ${theme.icon}`} />
@@ -200,7 +208,12 @@ export function Projects() {
                         <div className="aspect-video bg-background rounded-lg overflow-hidden shrink-0 mt-auto">
                           <div className={`w-full h-full flex items-center justify-center bg-gradient-to-br ${theme.gradient} relative`}>
                             {/* @ts-ignore */}
-                            {project.image ? (
+                            {project.customLogo ? (
+                              <div className="flex flex-col items-center gap-2 opacity-80">
+                                <span className="text-5xl font-bold text-primary" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>η</span>
+                                <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">HetaVideo</span>
+                              </div>
+                            ) : project.image ? (
                               <img src={project.image} alt={project.title} className="w-32 h-32 object-contain opacity-80" />
                             ) : (
                               <project.icon className={`w-24 h-24 ${theme.icon} opacity-40`} />
