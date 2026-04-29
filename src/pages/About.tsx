@@ -39,7 +39,7 @@ export function About() {
               <div className="flex-1 space-y-6 w-full">
                 <h1 className="text-foreground">About Me</h1>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  AI Product Manager and Certified Product Owner (CSPO®, PSPO I™) with 10+ years of experience building digital and AI-powered products from discovery to scale. Proven ability to translate complex business problems into structured product strategies, roadmaps, and measurable outcomes. Specialized in ML-driven SaaS, explainable AI, and data-informed decision-making. Strong technical foundation (Python, FastAPI, React, ML pipelines) enables effective collaboration with engineering teams and delivery of scalable, high-impact solutions.
+                  AI Product Manager and Certified Product Owner (CSPO®, PSPO I™) with 10+ years of experience building digital and AI-powered products from discovery to scale.
                 </p>
 
                 {/* Contact Details */}
@@ -103,17 +103,13 @@ export function About() {
             {/* Bio */}
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                With a background deeply rooted in software engineering and product strategy, I realized that the hardest
-                part of product management wasn't building the feature—it was deciding what to build.
+                Proven ability to translate complex business problems into structured product strategies, roadmaps, and measurable outcomes. Specialized in ML-driven SaaS, explainable AI, and data-informed decision-making.
               </p>
               <p>
-                I created ProductLogik to solve the 'Black Box' problem of prioritization. My work focuses on stripping away the ambiguity of product roadmaps using Explainable AI. I don't just advocate for AI; I build systems that govern it.
+                A strong technical foundation across Python, FastAPI, React, and ML pipelines enables effective collaboration with engineering teams and delivery of scalable, high-impact solutions.
               </p>
               <p>
                 This website, hamzalatif.com, serves as my personal portfolio—a space to share my journey, professional philosophy, and selected works with the product community.
-              </p>
-              <p>
-                Currently, I am scaling ProductLogik to help product teams move from 'feature factories' to 'decision engines'.
               </p>
             </div>
 

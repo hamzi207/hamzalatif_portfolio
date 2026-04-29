@@ -96,11 +96,11 @@ const projects: (Project & { theme?: ProjectTheme })[] = [
     featured: true,
     link: "/projects/teleresources",
     theme: {
-      primary: "group-hover:text-sky-600",
-      bg: "bg-sky-500/10",
-      border: "hover:border-sky-500/50",
-      gradient: "from-sky-500/20 to-sky-500/5",
-      icon: "text-sky-600"
+      primary: "group-hover:text-[#41cb5a]",
+      bg: "bg-[#41cb5a]/10",
+      border: "hover:border-[#41cb5a]/50",
+      gradient: "from-[#41cb5a]/20 to-[#292929]/10",
+      icon: "text-[#41cb5a]"
     }
   },
   {
