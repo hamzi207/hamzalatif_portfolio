@@ -78,18 +78,18 @@ const projects: (Project & { theme?: ProjectTheme })[] = [
     icon: PlayCircle,
     customLogo: (
       <span className="flex items-baseline gap-1 select-none">
-        <span className="text-2xl font-bold text-primary" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>η</span>
-        <span className="text-lg font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">HetaVideo</span>
+        <span className="text-2xl font-bold" style={{ fontFamily: 'Georgia, "Times New Roman", serif', color: "#e50914" }}>η</span>
+        <span className="text-lg font-bold" style={{ background: "linear-gradient(to right, #e50914, #ff4500)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>HetaVideo</span>
       </span>
     ),
     featured: true,
     link: "/projects/hetavideo",
     theme: {
-      primary: "group-hover:text-rose-600",
-      bg: "bg-rose-500/10",
-      border: "hover:border-rose-500/50",
-      gradient: "from-rose-500/20 to-rose-500/5",
-      icon: "text-rose-600"
+      primary: "group-hover:text-[#e50914]",
+      bg: "bg-[#e50914]/10",
+      border: "hover:border-[#e50914]/50",
+      gradient: "from-[#e50914]/20 to-[#ff4500]/10",
+      icon: "text-[#e50914]"
     }
   },
   {
@@ -209,9 +209,9 @@ export function Projects() {
                           <div className={`w-full h-full flex items-center justify-center bg-gradient-to-br ${theme.gradient} relative`}>
                             {/* @ts-ignore */}
                             {project.customLogo ? (
-                              <div className="flex flex-col items-center gap-2 opacity-80">
-                                <span className="text-5xl font-bold text-primary" style={{ fontFamily: 'Georgia, "Times New Roman", serif' }}>η</span>
-                                <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">HetaVideo</span>
+                              <div className="flex flex-col items-center gap-2 opacity-90">
+                                <span className="text-6xl font-bold" style={{ fontFamily: 'Georgia, "Times New Roman", serif', color: "#e50914" }}>η</span>
+                                <span className="text-3xl font-bold" style={{ background: "linear-gradient(to right, #e50914, #ff4500)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>HetaVideo</span>
                               </div>
                             ) : project.image ? (
                               <img src={project.image} alt={project.title} className="w-32 h-32 object-contain opacity-80" />
