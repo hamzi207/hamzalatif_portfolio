@@ -203,7 +203,7 @@ export function Projects() {
                             {project.image ? (
                               <img src={project.image} alt={project.title} className="w-32 h-32 object-contain opacity-80" />
                             ) : (
-                              <project.icon className="w-24 h-24 text-primary/40" />
+                              <project.icon className={`w-24 h-24 ${theme.icon} opacity-40`} />
                             )}
                           </div>
                         </div>
