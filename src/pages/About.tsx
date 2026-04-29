@@ -156,12 +156,12 @@ export function About() {
               </div>
 
               {/* Languages */}
-              <div className="md:col-span-1 space-y-6">
+              <div className="md:col-span-1 flex flex-col gap-6">
                 <div className="flex items-center space-x-3">
                   <Globe className="w-6 h-6 text-primary" />
                   <h3 className="text-foreground">Languages</h3>
                 </div>
-                <div className="p-6 bg-card border border-border rounded-lg space-y-4 h-full">
+                <div className="p-6 bg-card border border-border rounded-lg space-y-4 flex-1">
                   <div className="flex justify-between items-center pb-3 border-b border-border/50">
                     <span className="text-foreground font-medium">English</span>
                     <span className="text-sm text-primary">Proficient</span>
