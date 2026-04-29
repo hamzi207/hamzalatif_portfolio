@@ -129,13 +129,31 @@ const projects: (Project & { theme?: ProjectTheme })[] = [
   },
   {
     id: "bloomr-ecommerce",
-    title: "BLOOMR E-commerce Platform",
-    description: "Led the end-to-end redesign and infrastructure migration of a high-traffic retail e-commerce platform and accounting systems.",
-    tags: ["E-commerce", "Cloud Migration", "Infrastructure"],
+    title: "Bloomr (Shopify E-Commerce Platform)",
+    description: "Built and continuously improved a Shopify-based e-commerce platform from scratch, managing store setup, content, product catalog, and ongoing enhancements over multiple years.",
+    tags: ["Shopify", "E-commerce", "CRO", "Cloud Migration"],
     icon: ShoppingBag,
     featured: false,
-    link: null,
-  }
+    link: "https://bloomr.com",
+  },
+  {
+    id: "zennova-home",
+    title: "Zennova Home (Shopify Store)",
+    description: "Developed and launched a Shopify store from scratch, contributing to store setup, content creation, and operational workflows. Focused on building a structured and user-friendly platform aligned with business requirements.",
+    tags: ["Shopify", "E-commerce", "Store Launch"],
+    icon: ShoppingBag,
+    featured: false,
+    link: "https://zennovahome.com",
+  },
+  {
+    id: "zennova-group",
+    title: "Zennova Group (E-Commerce Optimization)",
+    description: "Improved existing e-commerce websites by enhancing UI layouts, resolving technical issues, and refining user flows across platforms including a carpet brand and a tyre marketplace.",
+    tags: ["WordPress", "E-commerce", "UX Optimization", "CRO"],
+    icon: Globe,
+    featured: false,
+    link: "https://zennovacarpet.com",
+  },
 ];
 
 export function Projects() {
