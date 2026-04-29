@@ -114,9 +114,9 @@ export function About() {
             </div>
 
             {/* Skills & Languages Grid */}
-            <div className="grid md:grid-cols-2 gap-12">
+            <div className="grid md:grid-cols-3 gap-12">
               {/* Skills */}
-              <div className="space-y-6">
+              <div className="md:col-span-2 space-y-6">
                 <div className="flex items-center space-x-3">
                   <Code2 className="w-6 h-6 text-primary" />
                   <h3 className="text-foreground">Skills</h3>
@@ -125,7 +125,7 @@ export function About() {
                   <div className="p-4 bg-card border border-border rounded-lg space-y-2">
                     <h4 className="font-medium text-foreground">AI & Data</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      Explainable AI, ML Pipelines, Data Analysis, Responsible AI, AI-Augmented Development (Vibe Coding: ChatGPT, Copilot, Gemini, Claude Code)
+                      Explainable AI, ML Pipelines, Data Analysis, Responsible AI, AI-Augmented Development (Vibe Coding: Codex, Copilot, Gemini, Claude Code)
                     </p>
                   </div>
                   <div className="p-4 bg-card border border-border rounded-lg space-y-2">
@@ -156,12 +156,12 @@ export function About() {
               </div>
 
               {/* Languages */}
-              <div className="space-y-6">
+              <div className="md:col-span-1 space-y-6">
                 <div className="flex items-center space-x-3">
                   <Globe className="w-6 h-6 text-primary" />
                   <h3 className="text-foreground">Languages</h3>
                 </div>
-                <div className="p-6 bg-card border border-border rounded-lg space-y-4">
+                <div className="p-6 bg-card border border-border rounded-lg space-y-4 h-full">
                   <div className="flex justify-between items-center pb-3 border-b border-border/50">
                     <span className="text-foreground font-medium">English</span>
                     <span className="text-sm text-primary">Proficient</span>
