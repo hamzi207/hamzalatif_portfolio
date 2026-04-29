@@ -132,12 +132,12 @@ export function Home() {
             transition={{ duration: 0.6 }}
             className="grid md:grid-cols-2 gap-8"
           >
-            <div className="p-8 bg-card border border-border rounded-xl hover:border-amber-500/50 transition-colors group">
-              <div className="w-12 h-12 bg-amber-500/10 rounded-lg flex items-center justify-center mb-6">
-                <ShoppingCart className="w-6 h-6 text-amber-500" />
+            <div className="p-8 bg-card border border-border rounded-xl hover:border-emerald-500/50 transition-colors group">
+              <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-6">
+                <Bot className="w-6 h-6 text-emerald-500" />
               </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-amber-500 transition-colors">E-Commerce & WordPress</h3>
-              <p className="text-muted-foreground leading-relaxed">Building blazing-fast online stores and robust CMS solutions tailored for conversions and high performance.</p>
+              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-emerald-500 transition-colors">AI & Product Strategy</h3>
+              <p className="text-muted-foreground leading-relaxed">Translating complex machine learning capabilities into viable business models and product architectures.</p>
             </div>
 
             <div className="p-8 bg-card border border-border rounded-xl hover:border-purple-500/50 transition-colors group">
@@ -148,20 +148,20 @@ export function Home() {
               <p className="text-muted-foreground leading-relaxed">Rapidly prototyping and developing robust full-stack applications leveraging advanced AI coding agents and LLMs.</p>
             </div>
 
-            <div className="p-8 bg-card border border-border rounded-xl hover:border-emerald-500/50 transition-colors group">
-              <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-6">
-                <Bot className="w-6 h-6 text-emerald-500" />
-              </div>
-              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-emerald-500 transition-colors">AI & Product Strategy</h3>
-              <p className="text-muted-foreground leading-relaxed">Translating complex machine learning capabilities into viable business models and product architectures.</p>
-            </div>
-
             <div className="p-8 bg-card border border-border rounded-xl hover:border-blue-500/50 transition-colors group">
               <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-6">
                 <Server className="w-6 h-6 text-blue-500" />
               </div>
               <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-blue-500 transition-colors">Infrastructure & Cloud</h3>
               <p className="text-muted-foreground leading-relaxed">End-to-end scalable architecture and deployment management across modern cloud platforms and self-hosted VPS.</p>
+            </div>
+
+            <div className="p-8 bg-card border border-border rounded-xl hover:border-amber-500/50 transition-colors group">
+              <div className="w-12 h-12 bg-amber-500/10 rounded-lg flex items-center justify-center mb-6">
+                <ShoppingCart className="w-6 h-6 text-amber-500" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-amber-500 transition-colors">E-Commerce & WordPress</h3>
+              <p className="text-muted-foreground leading-relaxed">Building blazing-fast online stores and robust CMS solutions tailored for conversions and high performance.</p>
             </div>
           </motion.div>
         </div>
