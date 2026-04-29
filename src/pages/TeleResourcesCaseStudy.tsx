@@ -1,35 +1,35 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
-import { ArrowLeft, ExternalLink } from "lucide-react";
+import { ArrowLeft, ExternalLink, Globe } from "lucide-react";
 import { SEO } from "../components/SEO";
 
-export function ProductLogikCaseStudy() {
+export function TeleResourcesCaseStudy() {
   const steps = [
     {
       id: 1,
-      title: "Input",
-      description: "User Feedback Ingestion (CSV Upload)"
+      title: "Discovery & Planning",
+      description: "Requirements gathering to model a robust Corporate CMS tailored for an EV infrastructure portfolio."
     },
     {
       id: 2,
-      title: "Processing",
-      description: "AI Theme Extraction + Sentiment Analysis"
+      title: "Architecture & Foundation",
+      description: "WordPress core setup with high-security configurations and scalable architecture."
     },
     {
       id: 3,
-      title: "Detection",
-      description: "Agile Anti-Pattern Recognition (e.g. 'Feature Factory')"
+      title: "Content Modeling",
+      description: "Implementing completely custom post types, responsive taxonomies, and flexible block structures for diverse product catalogs."
     },
     {
       id: 4,
-      title: "Output",
-      description: "Actionable Insights Dashboard & Risk Alerts"
+      title: "Deployment & Delivery",
+      description: "Rapid delivery cycles and seamless content migration, achieving optimal load speeds."
     }
   ];
 
   return (
     <div className="pt-32 pb-20 px-6 lg:px-8">
-      <SEO title="ProductLogik Case Study" description="How ProductLogik uses AI to detect agile anti-patterns and analyze user feedback." />
+      <SEO title="TeleResources Case Study" description="WordPress Corporate CMS built for TeleResources Pakistan." />
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,6 @@ export function ProductLogikCaseStudy() {
           transition={{ duration: 0.6 }}
           className="space-y-16"
         >
-          {/* Back Link */}
           <div className="flex items-center justify-between">
             <Link
               to="/projects"
@@ -47,10 +46,10 @@ export function ProductLogikCaseStudy() {
               Back to Projects
             </Link>
             <a
-              href="https://productlogik.com"
+              href="https://teleres.com.pk/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-500 transition-colors duration-200 text-sm font-medium"
+              className="inline-flex items-center px-4 py-2 bg-sky-600 text-white rounded-lg hover:bg-sky-500 transition-colors duration-200 text-sm font-medium"
             >
               Visit Live Project
               <ExternalLink className="w-4 h-4 ml-2" />
@@ -59,55 +58,49 @@ export function ProductLogikCaseStudy() {
 
           {/* Header */}
           <div className="space-y-6">
-            <h1 className="text-foreground">ProductLogik</h1>
+            <h1 className="text-foreground">TeleResources Pakistan (WordPress Development)</h1>
             <p className="text-2xl text-muted-foreground leading-relaxed">
-              AI-native SaaS platform transforming customer feedback into strategic product decision intelligence.
+              Robust corporate CMS platform built for a telecom and EV infrastructure leader, delivering exceptional performance and content scalability.
             </p>
             <div className="flex flex-wrap gap-2 pt-4">
               <span className="px-3 py-1 bg-card text-sm text-muted-foreground rounded-full border border-border">
-                Feedback Analysis
+                Corporate CMS
               </span>
               <span className="px-3 py-1 bg-card text-sm text-muted-foreground rounded-full border border-border">
-                Anti-Pattern Detection
+                EV Infrastructure
               </span>
-              <span className="px-3 py-1 bg-card text-sm text-muted-foreground rounded-full border border-border">
-                Agile
+              <span className="px-3 py-1 bg-sky-500/10 text-sm text-sky-500 rounded-full border border-sky-500/30">
+                WordPress Development
               </span>
-              <span className="px-3 py-1 bg-emerald-500/10 text-sm text-emerald-500 rounded-full border border-emerald-500/30">
-                VPS Infrastructure
-              </span>
-              <span className="px-3 py-1 bg-emerald-500/10 text-sm text-emerald-500 rounded-full border border-emerald-500/30">
-                Supabase
-              </span>
-              <span className="px-3 py-1 bg-emerald-500/10 text-sm text-emerald-500 rounded-full border border-emerald-500/30">
-                Resend
+              <span className="px-3 py-1 bg-sky-500/10 text-sm text-sky-500 rounded-full border border-sky-500/30">
+                Rapid Delivery
               </span>
             </div>
           </div>
 
-          {/* Hero Image */}
+          {/* Hero Image / Icon Fallback */}
           <div className="aspect-video bg-card rounded-lg border border-border overflow-hidden">
-            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-emerald-500/20 to-emerald-500/5">
+            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-sky-500/20 to-sky-500/5">
               <div className="text-center space-y-4 p-8">
-                <div className="w-20 h-20 bg-emerald-500/20 rounded-2xl flex items-center justify-center mx-auto">
-                  <img src="/assets/productlogik-logo.svg" alt="ProductLogik" className="w-12 h-12 object-contain" />
+                <div className="w-20 h-20 bg-sky-500/20 rounded-2xl flex items-center justify-center mx-auto shadow-sm">
+                  <Globe className="w-10 h-10 text-sky-500" />
                 </div>
-                <p className="text-muted-foreground">ProductLogik Platform</p>
+                <p className="text-muted-foreground">TeleResources Platform</p>
               </div>
             </div>
           </div>
 
           {/* System Diagram Structure */}
           <div className="space-y-8">
-            <h2 className="text-foreground">System Diagram Structure</h2>
+            <h2 className="text-foreground">Implementation Phases</h2>
             <div className="space-y-4">
               {steps.map((step, index) => (
                 <div key={index} className="flex items-start space-x-4 p-6 bg-card border border-border rounded-lg relative overflow-hidden">
                   <div className="absolute top-0 right-0 p-4 opacity-10">
-                    <span className="text-6xl font-bold text-emerald-500">{step.id}</span>
+                    <span className="text-6xl font-bold text-sky-500">{step.id}</span>
                   </div>
-                  <div className="w-8 h-8 bg-emerald-500/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1 z-10">
-                    <span className="text-sm font-bold text-emerald-600">{step.id}</span>
+                  <div className="w-8 h-8 bg-sky-500/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1 z-10">
+                    <span className="text-sm font-bold text-sky-600">{step.id}</span>
                   </div>
                   <div className="space-y-2 z-10">
                     <h3 className="text-lg font-medium text-foreground">{step.title}</h3>
@@ -122,17 +115,17 @@ export function ProductLogikCaseStudy() {
           <div className="pt-8 border-t border-border flex flex-col sm:flex-row sm:items-center justify-between gap-6">
             <Link
               to="/contact"
-              className="inline-flex items-center text-emerald-600 hover:text-emerald-500 transition-colors duration-200"
+              className="inline-flex items-center text-sky-600 hover:text-sky-500 transition-colors duration-200"
             >
-              Interested in discussing this project in detail? Let's talk →
+              Need a high-performance CMS? Let's talk →
             </Link>
             <a
-              href="https://productlogik.com"
+              href="https://teleres.com.pk/"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-emerald-600 hover:text-emerald-500 transition-colors duration-200 font-medium"
+              className="inline-flex items-center text-sky-600 hover:text-sky-500 transition-colors duration-200 font-medium"
             >
-              Visit ProductLogik Website
+              Visit Live Project
               <ExternalLink className="w-4 h-4 ml-2" />
             </a>
           </div>

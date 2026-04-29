@@ -1,0 +1,164 @@
+MUHAMMAD HAMZA LATIF
+AI PRODUCT MANAGER | PRODUCT OWNER (CSPO®, PSPO I™) | ML-DRIVEN SAAS
+
+hamzi207@gmail.com
++491631108764
+https://www.linkedin.com/in/mhlatif207/
+Berlin, Germany
+
+Summary
+======
+AI Product Manager and Product Owner with 8+ years of experience building digital and AI-enabled products. Specialized in explainable AI, ML-driven SaaS platforms, and data-informed product decision-making.
+
+
+Experience
+======
+AI Project Manager (AI Product & Delivery Focus)
+neuefische GmbH - School and Pool for Digital Talent
+09/2025 - 02/2026
+Berlin, Germany
+ - Built and delivered an ML-powered B2B SaaS product ("AI Compass") from discovery to deployment.
+ - Defined product vision, roadmap, prioritization, and measurable outcomes.
+ - Translated business challenges into structured AI product requirements and user stories.
+ - Designed a dual-engine system combining deterministic scoring with ML models (clustering, anomaly detection, peer benchmarking).
+ - Coordinated frontend (React), backend (FastAPI), and ML workflows in Agile sprints.
+ - Applied explainable and responsible AI principles to ensure transparency and stakeholder trust.
+
+Senior Product Owner / Digital Project Lead
+Klarstein (formerly Berlin Brands Group)
+07/2023 - 06/2025
+Berlin, Germany
+ - Supervised Agile delivery of large-scale e-commerce platforms and internal digital systems.
+ - Directed UX/UI redesign of high-traffic websites and IoT mobile applications.
+ - Managed strategic tool migrations: Search (FactFinder → Bloomreach), Personalization (Dynamic Yield → Bloomreach), Consent (OneTrust → UserCentrics).
+ - Oversaw development of a custom in-house CMS for marketing campaign management.
+ - Ensured GDPR-compliant implementations and executive-level stakeholder alignment.
+
+Product Owner / Digital Project Manager
+Zennova Home
+11/2021 - 02/2023
+Abu Dhabi, United Arab Emirates
+ - Guided ERP system development and enterprise-wide implementation.
+ - Managed the launch of four e-commerce platforms.
+ - Oversaw HRM web and mobile application development.
+ - Drove digital transformation across operations and procurement.
+
+Product Owner / Digital Project Manager
+BLOOMR
+02/2017 - 10/2021
+Ra’s al Khaymah, United Arab Emirates
+ - Led development and redesign of an e-commerce platform.
+ - Managed IT infrastructure implementation across retail and warehouse.
+ - Directed cloud migration of accounting systems.
+
+PHP Developer
+Loops & Logic
+02/2016 - 01/2017
+Lahore, Pakistan
+ - Developed PHP-based web applications in HRM and Healthcare domains
+ - Built backend systems and database integrations
+
+IT Support
+Revenue Department Divisional Office
+06/2012 - 01/2016
+Sargodha, Pakistan
+ - Supported IT systems across government departments
+ - Maintained system stability and reporting infrastructure
+
+
+AI PRODUCT PORTFOLIO
+======
+ProductLogik – AI Product Intelligence SaaS Platform
+01/2026 - Ongoing
+Berlin, Germany
+AI-native SaaS platform transforming customer feedback into strategic product decision intelligence.
+ - Defined product vision, roadmap, and subscription-based monetization model.
+ - Architected multimodel AI orchestration (Gemini + GPT fallback) ensuring reliability and cost efficiency.
+ - Designed explainable insight engine with confidence scoring and agile antipattern detection.
+ - Built and deployed full-stack architecture (FastAPI, PostgreSQL, React) with secure authentication and quota governance.
+ - Tech: Python, FastAPI, PostgreSQL, React, TypeScript, Stripe, Gemini API, OpenAI API
+
+AI Compass - AI Maturity Assessment Platform
+12/2025 - Ongoing
+Berlin, Germany
+SaaS platform evaluating AI readiness and maturity across key business dimensions.
+ - Defined 7-dimension AI maturity framework and structured evaluation model.
+ - Developed hybrid scoring engine combining rule-based logic with ML clustering and benchmarking.
+ - Generated explainable transformation roadmaps aligned with capability gaps.
+ - Led end-to-end product discovery and cross-functional Agile delivery.
+ - Tech: Python, FastAPI, Scikit-learn, PostgreSQL, React, ML Pipeline
+
+
+Skills
+======
+AI & Data
+ - Machine Learning Fundamentals
+ - ML Pipelines
+ - Explainable AI
+ - Model Evaluation Concepts
+ - Data Analysis
+ - Responsible AI
+
+Product & Leadership
+ - Product Strategy
+ - Product Ownership
+ - Roadmapping
+ - Backlog Prioritization
+ - Stakeholder Management
+ - Agile Delivery (Scrum)
+
+Tech
+ - Python
+ - FastAPI
+ - PHP
+ - React
+ - PostgreSQL
+ - MySQL
+ - SQL
+ - REST APIs
+ - Scikit-learn
+ - Git
+
+
+Education
+======
+Master of Information Technology
+University of Sargodha
+03/2013 - 03/2016
+
+Bachelors
+University of Sargodha
+02/2011 - 02/2013
+
+
+Certifications
+======
+Certified Scrum Product Owner (CSPO®)
+Scrum Alliance
+
+Professional Scrum Product Owner (PSPO™ I)
+Scrum.org
+
+Professional Scrum Master (PSM™ I)
+Scrum.org
+
+AI Project Manager Bootcamp
+neuefische GmbH (Spiced Academy)
+
+Google AI Essentials
+Google & Coursera
+
+Business Analysis & Process Management
+Coursera
+
+
+Languages
+======
+English
+
+Deutsch
+
+Urdu
+
+Punjabi
+

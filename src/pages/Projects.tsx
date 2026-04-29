@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
-import { ArrowRight, Target, Brain, Sparkles, Users, ShoppingBag } from "lucide-react";
+import { ArrowRight, Target, Brain, Sparkles, Users, ShoppingBag, Globe, PlayCircle } from "lucide-react";
 import { SEO } from "../components/SEO";
 
 interface ProjectTheme {
@@ -37,7 +37,7 @@ const projects: (Project & { theme?: ProjectTheme })[] = [
     title: "AI Compass",
     subtitle: "AI Maturity Assessment Platform",
     description: "SaaS platform evaluating AI readiness and maturity across key business dimensions.",
-    tags: ["Maturity Assessment", "SME", "Actionable Roadmap"],
+    tags: ["Maturity Assessment", "SME", "Actionable Roadmap", "Vercel", "Render", "Supabase", "Brevo"],
     icon: Target,
     image: "/assets/ai-compass-logo.svg",
     featured: true,
@@ -55,7 +55,7 @@ const projects: (Project & { theme?: ProjectTheme })[] = [
     title: "ProductLogik",
     subtitle: "AI Product Intelligence SaaS Platform",
     description: "AI-native SaaS platform transforming customer feedback into strategic product decision intelligence.",
-    tags: ["Feedback Analysis", "Anti-Pattern Detection", "Agile"],
+    tags: ["Feedback Analysis", "Anti-Pattern Detection", "Agile", "VPS", "Supabase", "Resend"],
     icon: Brain,
     image: "/assets/productlogik-logo.svg",
     featured: true,
@@ -66,6 +66,41 @@ const projects: (Project & { theme?: ProjectTheme })[] = [
       border: "hover:border-emerald-500/50",
       gradient: "from-emerald-500/20 to-emerald-500/5",
       icon: "text-emerald-600"
+    }
+  },
+  {
+    id: "hetavideo",
+    title: "HetaVideo",
+    subtitle: "Custom Video Streaming Platform",
+    description: "High-performance video streaming gateway bypassing third-party platform restrictions via self-managed architecture.",
+    tags: ["Next.js", "VPS", "Supabase", "Resend", "TMDB API"],
+    icon: PlayCircle,
+    image: "/assets/hetavideo-logo.svg",
+    featured: true,
+    link: "/projects/hetavideo",
+    theme: {
+      primary: "group-hover:text-rose-600",
+      bg: "bg-rose-500/10",
+      border: "hover:border-rose-500/50",
+      gradient: "from-rose-500/20 to-rose-500/5",
+      icon: "text-rose-600"
+    }
+  },
+  {
+    id: "teleresources",
+    title: "TeleResources Pakistan",
+    subtitle: "Corporate CMS & Catalog",
+    description: "Robust WordPress platform built for a telecom and EV infrastructure leader, designed for high performance.",
+    tags: ["WordPress Development", "Corporate CMS", "EV Infrastructure"],
+    icon: Globe,
+    featured: true,
+    link: "/projects/teleresources",
+    theme: {
+      primary: "group-hover:text-sky-600",
+      bg: "bg-sky-500/10",
+      border: "hover:border-sky-500/50",
+      gradient: "from-sky-500/20 to-sky-500/5",
+      icon: "text-sky-600"
     }
   },
   {

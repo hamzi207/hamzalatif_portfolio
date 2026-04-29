@@ -129,7 +129,7 @@ export function About() {
                   <div className="p-4 bg-card border border-border rounded-lg space-y-2">
                     <h4 className="font-medium text-foreground">AI & Data</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      Machine Learning Fundamentals, ML Pipelines, Explainable AI, Model Evaluation, Data Analysis, Responsible AI
+                      Explainable AI, ML Pipelines, Data Analysis, Responsible AI, AI-Augmented Development (Vibe Coding: ChatGPT, Copilot, Gemini, Claude Code)
                     </p>
                   </div>
                   <div className="p-4 bg-card border border-border rounded-lg space-y-2">
@@ -141,7 +141,13 @@ export function About() {
                   <div className="p-4 bg-card border border-border rounded-lg space-y-2">
                     <h4 className="font-medium text-foreground">Tech Stack</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
-                      Python, FastAPI, React, PostgreSQL, SQL, REST APIs, Git, Scikit-learn
+                      Python, FastAPI, React, Next.js, Node.js, PHP, JavaScript, CSS, PostgreSQL, Supabase, SQL, WordPress, Shopify, Git
+                    </p>
+                  </div>
+                  <div className="p-4 bg-card border border-border rounded-lg space-y-2">
+                    <h4 className="font-medium text-foreground">Infrastructure & Tools</h4>
+                    <p className="text-sm text-muted-foreground leading-relaxed">
+                      VPS Management, Vercel, Render, Nginx, GitHub CI/CD, Resend, Brevo
                     </p>
                   </div>
                 </div>

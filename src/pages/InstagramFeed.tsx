@@ -23,16 +23,12 @@ export function InstagramFeed() {
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(false);
 
-    // User Provided Token (Basic Display API format)
-    const ACCESS_TOKEN = "IGAAMXZBrRlvW9BZAFpCVkNhMnJNNjR1TVkwVTUxenVCdXdvbk9TWGpzdGFWcGdHczFaeTNWOVUySm41Q1YtX095OFZAxQkloRExRdVQ0cGZAvZAmZAwZADVWMk9wYTlaRTBfQUJpZA013Rzd0eWpiTFo2V2JNM0tLdWNGRS04amFXZAFRyTQZDZD";
-
     useEffect(() => {
         async function fetchInstagram() {
             try {
-                // Using the Basic Display API endpoint because the token is IGA...
-                const response = await fetch(
-                    `https://graph.instagram.com/me/media?fields=id,caption,media_type,media_url,thumbnail_url,permalink&limit=5&access_token=${ACCESS_TOKEN}`
-                );
+                // Fetching from our own backend API endpoint. 
+                // This keeps the token secure and automatically relies on the refreshed token.
+                const response = await fetch('/api/instagram/feed');
 
                 if (!response.ok) throw new Error("Failed to fetch");
 

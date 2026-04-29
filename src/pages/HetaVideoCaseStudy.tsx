@@ -3,33 +3,33 @@ import { Link } from "react-router";
 import { ArrowLeft, ExternalLink } from "lucide-react";
 import { SEO } from "../components/SEO";
 
-export function ProductLogikCaseStudy() {
+export function HetaVideoCaseStudy() {
   const steps = [
     {
       id: 1,
-      title: "Input",
-      description: "User Feedback Ingestion (CSV Upload)"
+      title: "Frontend Platform",
+      description: "Next.js UI & Mobile-Optimized Player"
     },
     {
       id: 2,
-      title: "Processing",
-      description: "AI Theme Extraction + Sentiment Analysis"
+      title: "Streaming Gateway",
+      description: "Express-based streaming gateway built to bypass third-party restrictions and serve high-performance video."
     },
     {
       id: 3,
-      title: "Detection",
-      description: "Agile Anti-Pattern Recognition (e.g. 'Feature Factory')"
+      title: "Data & Authentication",
+      description: "Supabase PostgreSQL Schema managing users, watch histories, and deep TMDB API integrations."
     },
     {
       id: 4,
-      title: "Output",
-      description: "Actionable Insights Dashboard & Risk Alerts"
+      title: "Infrastructure & DevOps",
+      description: "Self-managed Hostinger KVM2 VPS with resilient NGINX reverse-proxy routing and PM2 process management."
     }
   ];
 
   return (
     <div className="pt-32 pb-20 px-6 lg:px-8">
-      <SEO title="ProductLogik Case Study" description="How ProductLogik uses AI to detect agile anti-patterns and analyze user feedback." />
+      <SEO title="HetaVideo Case Study" description="Custom Video Streaming Platform built on VPS architecture by Hamza Latif." />
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -37,7 +37,6 @@ export function ProductLogikCaseStudy() {
           transition={{ duration: 0.6 }}
           className="space-y-16"
         >
-          {/* Back Link */}
           <div className="flex items-center justify-between">
             <Link
               to="/projects"
@@ -47,10 +46,10 @@ export function ProductLogikCaseStudy() {
               Back to Projects
             </Link>
             <a
-              href="https://productlogik.com"
+              href="https://hetavideo.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center px-4 py-2 bg-emerald-600 text-white rounded-lg hover:bg-emerald-500 transition-colors duration-200 text-sm font-medium"
+              className="inline-flex items-center px-4 py-2 bg-rose-600 text-white rounded-lg hover:bg-rose-500 transition-colors duration-200 text-sm font-medium"
             >
               Visit Live Project
               <ExternalLink className="w-4 h-4 ml-2" />
@@ -59,55 +58,55 @@ export function ProductLogikCaseStudy() {
 
           {/* Header */}
           <div className="space-y-6">
-            <h1 className="text-foreground">ProductLogik</h1>
+            <h1 className="text-foreground">HetaVideo</h1>
             <p className="text-2xl text-muted-foreground leading-relaxed">
-              AI-native SaaS platform transforming customer feedback into strategic product decision intelligence.
+              High-performance video streaming gateway bypassing third-party platform restrictions via self-managed architecture.
             </p>
             <div className="flex flex-wrap gap-2 pt-4">
               <span className="px-3 py-1 bg-card text-sm text-muted-foreground rounded-full border border-border">
-                Feedback Analysis
+                Video Streaming
               </span>
-              <span className="px-3 py-1 bg-card text-sm text-muted-foreground rounded-full border border-border">
-                Anti-Pattern Detection
+              <span className="px-3 py-1 bg-rose-500/10 text-sm text-rose-500 rounded-full border border-rose-500/30">
+                Next.js
               </span>
-              <span className="px-3 py-1 bg-card text-sm text-muted-foreground rounded-full border border-border">
-                Agile
-              </span>
-              <span className="px-3 py-1 bg-emerald-500/10 text-sm text-emerald-500 rounded-full border border-emerald-500/30">
+              <span className="px-3 py-1 bg-rose-500/10 text-sm text-rose-500 rounded-full border border-rose-500/30">
                 VPS Infrastructure
               </span>
-              <span className="px-3 py-1 bg-emerald-500/10 text-sm text-emerald-500 rounded-full border border-emerald-500/30">
+              <span className="px-3 py-1 bg-rose-500/10 text-sm text-rose-500 rounded-full border border-rose-500/30">
                 Supabase
               </span>
-              <span className="px-3 py-1 bg-emerald-500/10 text-sm text-emerald-500 rounded-full border border-emerald-500/30">
+              <span className="px-3 py-1 bg-rose-500/10 text-sm text-rose-500 rounded-full border border-rose-500/30">
                 Resend
+              </span>
+              <span className="px-3 py-1 bg-rose-500/10 text-sm text-rose-500 rounded-full border border-rose-500/30">
+                TMDB API
               </span>
             </div>
           </div>
 
           {/* Hero Image */}
           <div className="aspect-video bg-card rounded-lg border border-border overflow-hidden">
-            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-emerald-500/20 to-emerald-500/5">
+            <div className="w-full h-full flex items-center justify-center bg-gradient-to-br from-rose-500/20 to-rose-500/5">
               <div className="text-center space-y-4 p-8">
-                <div className="w-20 h-20 bg-emerald-500/20 rounded-2xl flex items-center justify-center mx-auto">
-                  <img src="/assets/productlogik-logo.svg" alt="ProductLogik" className="w-12 h-12 object-contain" />
+                <div className="w-20 h-20 bg-rose-500/20 rounded-2xl flex items-center justify-center mx-auto">
+                  <img src="/assets/hetavideo-logo.svg" alt="HetaVideo" className="w-12 h-12 object-contain" />
                 </div>
-                <p className="text-muted-foreground">ProductLogik Platform</p>
+                <p className="text-muted-foreground">HetaVideo Core Architecture</p>
               </div>
             </div>
           </div>
 
           {/* System Diagram Structure */}
           <div className="space-y-8">
-            <h2 className="text-foreground">System Diagram Structure</h2>
+            <h2 className="text-foreground">Architecture Overview</h2>
             <div className="space-y-4">
               {steps.map((step, index) => (
                 <div key={index} className="flex items-start space-x-4 p-6 bg-card border border-border rounded-lg relative overflow-hidden">
                   <div className="absolute top-0 right-0 p-4 opacity-10">
-                    <span className="text-6xl font-bold text-emerald-500">{step.id}</span>
+                    <span className="text-6xl font-bold text-rose-500">{step.id}</span>
                   </div>
-                  <div className="w-8 h-8 bg-emerald-500/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1 z-10">
-                    <span className="text-sm font-bold text-emerald-600">{step.id}</span>
+                  <div className="w-8 h-8 bg-rose-500/10 rounded-full flex items-center justify-center flex-shrink-0 mt-1 z-10">
+                    <span className="text-sm font-bold text-rose-600">{step.id}</span>
                   </div>
                   <div className="space-y-2 z-10">
                     <h3 className="text-lg font-medium text-foreground">{step.title}</h3>
@@ -122,17 +121,17 @@ export function ProductLogikCaseStudy() {
           <div className="pt-8 border-t border-border flex flex-col sm:flex-row sm:items-center justify-between gap-6">
             <Link
               to="/contact"
-              className="inline-flex items-center text-emerald-600 hover:text-emerald-500 transition-colors duration-200"
+              className="inline-flex items-center text-rose-600 hover:text-rose-500 transition-colors duration-200"
             >
-              Interested in discussing this project in detail? Let's talk →
+              Ready to scale your infrastructure? Let's talk →
             </Link>
             <a
-              href="https://productlogik.com"
+              href="https://hetavideo.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-emerald-600 hover:text-emerald-500 transition-colors duration-200 font-medium"
+              className="inline-flex items-center text-rose-600 hover:text-rose-500 transition-colors duration-200 font-medium"
             >
-              Visit ProductLogik Website
+              Visit Live Project
               <ExternalLink className="w-4 h-4 ml-2" />
             </a>
           </div>

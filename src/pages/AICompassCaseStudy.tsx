@@ -72,6 +72,18 @@ export function AICompassCaseStudy() {
               <span className="px-3 py-1 bg-card text-sm text-muted-foreground rounded-full border border-border">
                 SME Strategy
               </span>
+              <span className="px-3 py-1 bg-indigo-500/10 text-sm text-indigo-500 rounded-full border border-indigo-500/30">
+                Vercel
+              </span>
+              <span className="px-3 py-1 bg-indigo-500/10 text-sm text-indigo-500 rounded-full border border-indigo-500/30">
+                Render
+              </span>
+              <span className="px-3 py-1 bg-indigo-500/10 text-sm text-indigo-500 rounded-full border border-indigo-500/30">
+                Supabase
+              </span>
+              <span className="px-3 py-1 bg-indigo-500/10 text-sm text-indigo-500 rounded-full border border-indigo-500/30">
+                Brevo
+              </span>
             </div>
           </div>
 

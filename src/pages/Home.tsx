@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Link } from "react-router";
-import { ArrowRight, Sparkles, Target, Zap, Brain } from "lucide-react";
+import { ArrowRight, Sparkles, Target, Brain, ShoppingCart, Bot, Server, TerminalSquare } from "lucide-react";
 import { InstagramFeed } from "./InstagramFeed";
 
 const featuredProjects = [
@@ -115,44 +115,53 @@ export function Home() {
         </div>
       </section>
 
-      {/* Value Proposition Grid */}
+      {/* Services Preview Grid */}
       <section className="py-32 px-6 lg:px-8 bg-card/30">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-6xl mx-auto space-y-12">
+          <div className="flex items-center justify-between mb-8">
+            <h2 className="text-2xl font-semibold text-foreground">My Services</h2>
+            <Link to="/services" className="text-primary hover:underline flex items-center">
+              View All Details <ArrowRight className="ml-1 w-4 h-4" />
+            </Link>
+          </div>
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="grid md:grid-cols-3 gap-12"
+            className="grid md:grid-cols-2 gap-8"
           >
-            <div className="space-y-4">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                <Target className="w-6 h-6 text-primary" />
+            <div className="p-8 bg-card border border-border rounded-xl hover:border-amber-500/50 transition-colors group">
+              <div className="w-12 h-12 bg-amber-500/10 rounded-lg flex items-center justify-center mb-6">
+                <ShoppingCart className="w-6 h-6 text-amber-500" />
               </div>
-              <h3 className="text-foreground">AI Strategy</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Translating LLM capabilities into viable business models.
-              </p>
+              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-amber-500 transition-colors">E-Commerce & WordPress</h3>
+              <p className="text-muted-foreground leading-relaxed">Building blazing-fast online stores and robust CMS solutions tailored for conversions and high performance.</p>
             </div>
 
-            <div className="space-y-4">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                <Zap className="w-6 h-6 text-primary" />
+            <div className="p-8 bg-card border border-border rounded-xl hover:border-purple-500/50 transition-colors group">
+              <div className="w-12 h-12 bg-purple-500/10 rounded-lg flex items-center justify-center mb-6">
+                <TerminalSquare className="w-6 h-6 text-purple-500" />
               </div>
-              <h3 className="text-foreground">Product Governance</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Building frameworks for ethical and scalable AI adoption.
-              </p>
+              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-purple-500 transition-colors">AI-Augmented Vibe Coding</h3>
+              <p className="text-muted-foreground leading-relaxed">Rapidly prototyping and developing robust full-stack applications leveraging advanced AI coding agents and LLMs.</p>
             </div>
 
-            <div className="space-y-4">
-              <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
-                <Sparkles className="w-6 h-6 text-primary" />
+            <div className="p-8 bg-card border border-border rounded-xl hover:border-emerald-500/50 transition-colors group">
+              <div className="w-12 h-12 bg-emerald-500/10 rounded-lg flex items-center justify-center mb-6">
+                <Bot className="w-6 h-6 text-emerald-500" />
               </div>
-              <h3 className="text-foreground">Decision Intelligence</h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Using data to remove bias from product roadmaps.
-              </p>
+              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-emerald-500 transition-colors">AI & Product Strategy</h3>
+              <p className="text-muted-foreground leading-relaxed">Translating complex machine learning capabilities into viable business models and product architectures.</p>
+            </div>
+
+            <div className="p-8 bg-card border border-border rounded-xl hover:border-blue-500/50 transition-colors group">
+              <div className="w-12 h-12 bg-blue-500/10 rounded-lg flex items-center justify-center mb-6">
+                <Server className="w-6 h-6 text-blue-500" />
+              </div>
+              <h3 className="text-xl font-semibold text-foreground mb-3 group-hover:text-blue-500 transition-colors">Infrastructure & Cloud</h3>
+              <p className="text-muted-foreground leading-relaxed">End-to-end scalable architecture and deployment management across modern cloud platforms and self-hosted VPS.</p>
             </div>
           </motion.div>
         </div>
