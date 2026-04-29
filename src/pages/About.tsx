@@ -39,7 +39,7 @@ export function About() {
               <div className="flex-1 space-y-6 w-full">
                 <h1 className="text-foreground">About Me</h1>
                 <p className="text-xl text-muted-foreground leading-relaxed">
-                  AI Product Manager and Product Owner with 8+ years of experience building digital and AI-enabled products. Specialized in explainable AI, ML-driven SaaS platforms, and data-informed product decision-making.
+                  AI Product Manager and Certified Product Owner (CSPO®, PSPO I™) with 10+ years of experience building digital and AI-powered products from discovery to scale. Proven ability to translate complex business problems into structured product strategies, roadmaps, and measurable outcomes. Specialized in ML-driven SaaS, explainable AI, and data-informed decision-making. Strong technical foundation (Python, FastAPI, React, ML pipelines) enables effective collaboration with engineering teams and delivery of scalable, high-impact solutions.
                 </p>
 
                 {/* Contact Details */}
@@ -70,15 +70,15 @@ export function About() {
 
                 <div className="flex flex-wrap gap-4 pt-6">
                   <button
-                    onClick={() => openPreview("/assets/Muhammad_Hamza_Latif_Resume_v2.pdf", "Muhammad Hamza Latif - Resume")}
+                    onClick={() => openPreview("/assets/1_Muhammad_Hamza_Latif_Resume.pdf", "Muhammad Hamza Latif - Resume")}
                     className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground font-medium rounded-lg hover:bg-primary/90 transition-colors duration-200 cursor-pointer shadow-sm hover:shadow-md"
                   >
                     <FileText className="w-5 h-5 mr-2" />
                     View CV
                   </button>
                   <a
-                    href="/assets/Muhammad_Hamza_Latif_Resume_v2.pdf"
-                    download="Muhammad_Hamza_Latif_Resume_v2.pdf"
+                    href="/assets/1_Muhammad_Hamza_Latif_Resume.pdf"
+                    download="1_Muhammad_Hamza_Latif_Resume.pdf"
                     className="inline-flex items-center px-6 py-3 bg-card text-foreground font-medium border border-border rounded-lg hover:border-primary/50 transition-colors duration-200 shadow-sm hover:shadow-md"
                   >
                     <Download className="w-5 h-5 mr-2" />
@@ -190,26 +190,26 @@ export function About() {
 
                 <div className="space-y-2">
                   <div className="flex items-baseline justify-between">
-                    <h4 className="text-foreground">AI Project Manager (AI Product & Delivery Focus)</h4>
-                    <span className="text-sm text-muted-foreground">09/2025 - 02/2026</span>
+                    <h4 className="text-foreground">AI Product Manager (AI Project Delivery)</h4>
+                    <span className="text-sm text-muted-foreground">09/2025 - 01/2026</span>
                   </div>
                   <p className="text-primary font-medium">
-                    <a href="https://www.neuefische.de" target="_blank" rel="noopener noreferrer" className="hover:underline">neuefische GmbH - School and Pool for Digital Talent</a>
+                    <a href="https://www.neuefische.de" target="_blank" rel="noopener noreferrer" className="hover:underline">Neuefische Gmbh</a>
                   </p>
                   <p className="text-muted-foreground">Berlin, Germany</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
-                    <li>Built and delivered an ML-powered B2B SaaS product ("AI Compass") from discovery to deployment.</li>
-                    <li>Defined product vision, roadmap, prioritization, and measurable outcomes.</li>
-                    <li>Translated business challenges into structured AI product requirements and user stories.</li>
-                    <li>Designed a dual-engine system combining deterministic scoring with ML models (clustering, anomaly detection, peer benchmarking).</li>
-                    <li>Coordinated frontend (React), backend (FastAPI), and ML workflows in Agile sprints.</li>
-                    <li>Applied explainable and responsible AI principles to ensure transparency and stakeholder trust.</li>
+                    <li>Delivered an ML-powered B2B SaaS product (AI Compass) from discovery to production in Agile sprints.</li>
+                    <li>Defined product vision, roadmap, and KPIs; aligned business and technical stakeholders.</li>
+                    <li>Translated complex requirements into user stories and acceptance criteria.</li>
+                    <li>Designed hybrid scoring engine (rule-based + ML clustering, anomaly detection).</li>
+                    <li>Coordinated React frontend, FastAPI backend, and ML pipelines across teams.</li>
+                    <li>Ensured explainability, transparency, and trust in AI-generated outputs.</li>
                   </ul>
                 </div>
 
                 <div className="space-y-2">
                   <div className="flex items-baseline justify-between">
-                    <h4 className="text-foreground">Senior Product Owner / Digital Project Lead</h4>
+                    <h4 className="text-foreground">Senior Product Owner (Digital Project Lead)</h4>
                     <span className="text-sm text-muted-foreground">07/2023 - 06/2025</span>
                   </div>
                   <p className="text-primary font-medium">
@@ -217,70 +217,76 @@ export function About() {
                   </p>
                   <p className="text-muted-foreground">Berlin, Germany</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
-                    <li>Supervised Agile delivery of large-scale e-commerce platforms and internal digital systems.</li>
-                    <li>Directed UX/UI redesign of high-traffic websites and IoT mobile applications.</li>
-                    <li>Managed strategic tool migrations: Search (FactFinder → Bloomreach), Personalization (Dynamic Yield → Bloomreach), Consent (OneTrust → UserCentrics).</li>
-                    <li>Oversaw development of a custom in-house CMS for marketing campaign management.</li>
-                    <li>Ensured GDPR-compliant implementations and executive-level stakeholder alignment.</li>
+                    <li>Owned Agile delivery of large-scale e-commerce platforms and internal systems.</li>
+                    <li>Led UX/UI redesign of high-traffic websites and IoT apps, improving conversion rates.</li>
+                    <li>Managed platform migrations (FactFinder & Dynamic Yield to Bloomreach, OneTrust to Usercentrics).</li>
+                    <li>Delivered custom CMS, reducing campaign deployment time significantly.</li>
+                    <li>Ensured GDPR compliance across all digital products.</li>
+                    <li>Presented product strategy and performance insights to C-level stakeholders.</li>
+                    <li>Mentored junior product owners and led backlog refinement sessions.</li>
                   </ul>
                 </div>
 
                 <div className="space-y-2">
                   <div className="flex items-baseline justify-between">
-                    <h4 className="text-foreground">Product Owner / Digital Project Manager</h4>
+                    <h4 className="text-foreground">Digital Project Manager</h4>
                     <span className="text-sm text-muted-foreground">11/2021 - 02/2023</span>
                   </div>
                   <p className="text-primary font-medium">
                     <a href="https://zennovacarpet.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">Zennova Home</a>
                   </p>
-                  <p className="text-muted-foreground">Abu Dhabi, United Arab Emirates</p>
+                  <p className="text-muted-foreground">Abu Dhabi, UAE</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
-                    <li>Guided ERP system development and enterprise-wide implementation.</li>
-                    <li>Managed the launch of four e-commerce platforms.</li>
-                    <li>Oversaw HRM web and mobile application development.</li>
-                    <li>Drove digital transformation across operations and procurement.</li>
+                    <li>Led ERP development and company-wide rollout across operations and finance.</li>
+                    <li>Delivered 4 e-commerce platforms with integrated catalog, pricing, and fulfillment systems.</li>
+                    <li>Managed HRM web/mobile app development from requirements to go-live.</li>
+                    <li>Defined KPIs for operations, fulfillment, and customer experience.</li>
                   </ul>
                 </div>
 
                 <div className="space-y-2">
                   <div className="flex items-baseline justify-between">
-                    <h4 className="text-foreground">Product Owner / Digital Project Manager</h4>
+                    <h4 className="text-foreground">E-Commerce Project Manager</h4>
                     <span className="text-sm text-muted-foreground">02/2017 - 10/2021</span>
                   </div>
                   <p className="text-primary font-medium">
-                    <a href="https://www.bloomr.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">BLOOMR</a>
+                    <a href="https://www.bloomr.com/" target="_blank" rel="noopener noreferrer" className="hover:underline">Bloomr.ae</a>
                   </p>
-                  <p className="text-muted-foreground">Ra's al Khaymah, United Arab Emirates</p>
+                  <p className="text-muted-foreground">Ras Al Khaimah, UAE</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
-                    <li>Led development and redesign of an e-commerce platform.</li>
-                    <li>Managed IT infrastructure implementation across retail and warehouse.</li>
-                    <li>Directed cloud migration of accounting systems.</li>
+                    <li>Owned Shopify platform development, scaling and optimization.</li>
+                    <li>Managed product backlog and a cross-functional team of 20+.</li>
+                    <li>Improved operational efficiency by 30% through process automation.</li>
+                    <li>Led cloud migration of accounting systems with zero downtime.</li>
+                    <li>Defined KPIs and drove roadmap decisions using data insights.</li>
                   </ul>
                 </div>
 
                 <div className="space-y-2">
                   <div className="flex items-baseline justify-between">
-                    <h4 className="text-foreground">PHP Developer</h4>
-                    <span className="text-sm text-muted-foreground">02/2016 - 01/2017</span>
+                    <h4 className="text-foreground">Software Engineer (PHP Developer)</h4>
+                    <span className="text-sm text-muted-foreground">02/2016 - 03/2017</span>
                   </div>
-                  <p className="text-primary font-medium">Loops & Logic</p>
+                  <p className="text-primary font-medium">Loops N Logic</p>
                   <p className="text-muted-foreground">Lahore, Pakistan</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
-                    <li>Developed PHP-based web applications in HRM and Healthcare domains</li>
-                    <li>Built backend systems and database integrations</li>
+                    <li>Built PHP-based applications for HRM and healthcare domains.</li>
+                    <li>Developed backend systems and database integrations (MySQL).</li>
+                    <li>Delivered scalable and responsive web solutions.</li>
                   </ul>
                 </div>
 
                 <div className="space-y-2">
                   <div className="flex items-baseline justify-between">
-                    <h4 className="text-foreground">IT Support</h4>
+                    <h4 className="text-foreground">IT Support Specialist</h4>
                     <span className="text-sm text-muted-foreground">06/2012 - 01/2016</span>
                   </div>
-                  <p className="text-primary font-medium">Revenue Department Divisional Office</p>
+                  <p className="text-primary font-medium">Government of the Punjab</p>
                   <p className="text-muted-foreground">Sargodha, Pakistan</p>
                   <ul className="text-muted-foreground list-disc list-inside space-y-1 text-sm">
-                    <li>Supported IT systems across government departments</li>
-                    <li>Maintained system stability and reporting infrastructure</li>
+                    <li>Maintained IT systems and ensured operational stability.</li>
+                    <li>Standardized reporting processes across departments.</li>
+                    <li>Managed hardware procurement and infrastructure setup.</li>
                   </ul>
                 </div>
 

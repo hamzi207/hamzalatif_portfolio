@@ -155,63 +155,63 @@ export function Projects() {
           {/* Featured Project */}
           <div className="space-y-6">
             <h2 className="text-2xl font-semibold text-foreground">Featured AI Systems</h2>
-            {projects
-              .filter((p) => p.featured)
-              .map((project) => {
-                const theme = project.theme || defaultTheme;
-                // Helper to get text color for icon wrapper if image is missing
-                // theme.icon is like "text-indigo-600", we want that same color
-                return (
-                  <Link
-                    key={project.id}
-                    to={project.link || "#"}
-                    className="group block"
-                  >
-                    <div className={`grid md:grid-cols-2 gap-12 items-center p-8 bg-card border border-border rounded-lg ${theme.border} transition-colors duration-200`}>
-                      <div className="space-y-6">
-                        <div className={`w-14 h-14 ${theme.bg} rounded-lg flex items-center justify-center`}>
-                          {/* @ts-ignore */}
-                          {project.image ? (
-                            <img src={project.image} alt={project.title} className="w-10 h-10 object-contain" />
-                          ) : (
-                            <project.icon className={`w-7 h-7 ${theme.icon}`} />
-                          )}
+            <div className="grid lg:grid-cols-2 gap-8">
+              {projects
+                .filter((p) => p.featured)
+                .map((project) => {
+                  const theme = project.theme || defaultTheme;
+                  return (
+                    <Link
+                      key={project.id}
+                      to={project.link || "#"}
+                      className="group block h-full"
+                    >
+                      <div className={`flex flex-col h-full gap-8 p-8 bg-card border border-border rounded-lg ${theme.border} transition-colors duration-200`}>
+                        <div className="space-y-6 flex-1">
+                          <div className={`w-14 h-14 ${theme.bg} rounded-lg flex items-center justify-center`}>
+                            {/* @ts-ignore */}
+                            {project.image ? (
+                              <img src={project.image} alt={project.title} className="w-10 h-10 object-contain" />
+                            ) : (
+                              <project.icon className={`w-7 h-7 ${theme.icon}`} />
+                            )}
+                          </div>
+                          <h2 className={`text-foreground ${theme.primary} transition-colors duration-200`}>
+                            {project.title}
+                          </h2>
+                          <p className="text-lg text-muted-foreground leading-relaxed">
+                            {project.description}
+                          </p>
+                          <div className="flex flex-wrap gap-2">
+                            {project.tags.map((tag) => (
+                              <span
+                                key={tag}
+                                className="px-3 py-1 bg-background text-sm text-muted-foreground rounded-full border border-border"
+                              >
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                          <div className={`inline-flex items-center ${theme.icon}`}>
+                            View Case Study
+                            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+                          </div>
                         </div>
-                        <h2 className={`text-foreground ${theme.primary} transition-colors duration-200`}>
-                          {project.title}
-                        </h2>
-                        <p className="text-lg text-muted-foreground leading-relaxed">
-                          {project.description}
-                        </p>
-                        <div className="flex flex-wrap gap-2">
-                          {project.tags.map((tag) => (
-                            <span
-                              key={tag}
-                              className="px-3 py-1 bg-background text-sm text-muted-foreground rounded-full border border-border"
-                            >
-                              {tag}
-                            </span>
-                          ))}
-                        </div>
-                        <div className={`inline-flex items-center ${theme.icon}`}>
-                          View Case Study
-                          <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform duration-200" />
+                        <div className="aspect-video bg-background rounded-lg overflow-hidden shrink-0 mt-auto">
+                          <div className={`w-full h-full flex items-center justify-center bg-gradient-to-br ${theme.gradient} relative`}>
+                            {/* @ts-ignore */}
+                            {project.image ? (
+                              <img src={project.image} alt={project.title} className="w-32 h-32 object-contain opacity-80" />
+                            ) : (
+                              <project.icon className="w-24 h-24 text-primary/40" />
+                            )}
+                          </div>
                         </div>
                       </div>
-                      <div className="aspect-square bg-background rounded-lg overflow-hidden">
-                        <div className={`w-full h-full flex items-center justify-center bg-gradient-to-br ${theme.gradient} relative`}>
-                          {/* @ts-ignore */}
-                          {project.image ? (
-                            <img src={project.image} alt={project.title} className="w-48 h-48 object-contain opacity-80" />
-                          ) : (
-                            <project.icon className="w-32 h-32 text-primary/40" />
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                )
-              })}
+                    </Link>
+                  )
+                })}
+            </div>
           </div>
 
           {/* Other Projects */}

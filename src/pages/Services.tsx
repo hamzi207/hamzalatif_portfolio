@@ -6,16 +6,16 @@ import { SEO } from "../components/SEO";
 export function Services() {
   const services = [
     {
-      id: "e-commerce",
-      title: "E-Commerce & WordPress Development",
-      description: "Building blazing-fast online stores and robust CMS solutions tailored for conversions and high performance.",
-      icon: ShoppingCart,
-      tags: ["WordPress", "WooCommerce", "Shopify", "CMS Setup", "Theme Customization"],
+      id: "ai-data",
+      title: "AI Product & Data Strategy",
+      description: "Translating complex machine learning and LLM capabilities into viable business models and product architectures.",
+      icon: Bot,
+      tags: ["Explainable AI", "ML Pipelines", "Product Roadmap", "Decision Intelligence"],
       theme: {
-        primary: "group-hover:text-amber-500",
-        bg: "bg-amber-500/10",
-        border: "hover:border-amber-500/50",
-        icon: "text-amber-500"
+        primary: "group-hover:text-emerald-500",
+        bg: "bg-emerald-500/10",
+        border: "hover:border-emerald-500/50",
+        icon: "text-emerald-500"
       }
     },
     {
@@ -32,19 +32,6 @@ export function Services() {
       }
     },
     {
-      id: "ai-data",
-      title: "AI Product & Data Strategy",
-      description: "Translating complex machine learning and LLM capabilities into viable business models and product architectures.",
-      icon: Bot,
-      tags: ["Explainable AI", "ML Pipelines", "Product Roadmap", "Decision Intelligence"],
-      theme: {
-        primary: "group-hover:text-emerald-500",
-        bg: "bg-emerald-500/10",
-        border: "hover:border-emerald-500/50",
-        icon: "text-emerald-500"
-      }
-    },
-    {
       id: "infrastructure",
       title: "Full-Stack Engineering & Infrastructure",
       description: "End-to-end scalable architecture and deployment management across modern cloud platforms and self-hosted instances.",
@@ -55,6 +42,19 @@ export function Services() {
         bg: "bg-blue-500/10",
         border: "hover:border-blue-500/50",
         icon: "text-blue-500"
+      }
+    },
+    {
+      id: "e-commerce",
+      title: "E-Commerce & WordPress Development",
+      description: "Building blazing-fast online stores and robust CMS solutions tailored for conversions and high performance.",
+      icon: ShoppingCart,
+      tags: ["WordPress", "WooCommerce", "Shopify", "CMS Setup", "Theme Customization"],
+      theme: {
+        primary: "group-hover:text-amber-500",
+        bg: "bg-amber-500/10",
+        border: "hover:border-amber-500/50",
+        icon: "text-amber-500"
       }
     }
   ];
