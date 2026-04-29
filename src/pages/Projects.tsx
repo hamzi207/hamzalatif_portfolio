@@ -177,7 +177,7 @@ export function Projects() {
                           <div className={`w-14 h-14 ${theme.bg} rounded-lg flex items-center justify-center`}>
                             {/* @ts-ignore */}
                             {project.customLogo ? (
-                              <div className={`w-10 h-10 flex items-center justify-center ${theme.bg} rounded`}>{project.customLogo}</div>
+                              <span className="text-2xl font-bold" style={{ fontFamily: 'Georgia, "Times New Roman", serif', color: "#e50914" }}>η</span>
                             ) : project.image ? (
                               <img src={project.image} alt={project.title} className="w-10 h-10 object-contain" />
                             ) : (
