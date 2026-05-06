@@ -7,7 +7,16 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h4 className="text-lg font-bold tracking-tight text-foreground">Hamza Latif</h4>
+            <div className="flex items-center space-x-3">
+              <div className="w-10 h-10 overflow-hidden flex items-center justify-center">
+                <img
+                  src="/assets/logo/H2_logo_primary_text.svg"
+                  alt="H2 Logo"
+                  className="w-full h-full object-contain"
+                />
+              </div>
+              <h4 className="text-lg font-bold tracking-tight text-foreground">Hamza Latif</h4>
+            </div>
             <p className="text-sm text-muted-foreground">
               AI Product Manager building intelligent products that solve real problems.
             </p>
